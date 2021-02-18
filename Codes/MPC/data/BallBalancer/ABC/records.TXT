@@ -1,0 +1,2168 @@
+/home/gongchen/Reinforcement_Learning/MPC-Qube/venv/bin/python /home/gongchen/Reinforcement_Learning/MPC-ball_balancer/run.py
+/usr/local/lib/python3.8/dist-packages/gym-0.17.3-py3.8.egg/gym/logger.py:30: UserWarning: WARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+/home/gongchen/Reinforcement_Learning/MPC-ball_balancer/utils.py:23: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  return yaml.load(f)
+/home/gongchen/Reinforcement_Learning/MPC-ball_balancer/utils.py:30: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  config = yaml.load(f)
+************************
+*** model configuration ***
+load_model: false
+model_path: storage/exp_7.ckpt
+n_actions: 2
+n_hidden: 2
+n_states: 8
+size_hidden: 500
+use_cuda: false
+
+*** train configuration ***
+batch_size: 512
+exp_number: 5
+learning_rate: 0.001
+n_epochs: 100
+save_loss_fig: true
+save_loss_fig_frequency: 10
+save_model_flag: true
+save_model_path: storage/exp_7.ckpt
+
+************************
+*** dataset configuration ***
+load_flag: false
+load_path: storage/data_exp_7.pkl
+min_train_samples: 8000
+mpc_dataset_split: 0.5
+n_max_steps: 100
+n_mpc_episodes: 4
+n_mpc_itrs: 100
+n_random_episodes: 100
+save_flag: true
+save_path: storage/data_exp_7.pkl
+testset_split: 0.1
+
+************************
+*** MPC controller configuration ***
+action_high: 5
+action_low: -5
+gamma: 0.999
+horizon: 15
+max_itrs: 40
+numb_bees: 8
+
+##modeling
+##Factorying
+Collect random dataset shape:  (10000, 10)
+##Collecting
+Total training step per epoch [18]
+Epoch [10/100], Training Loss: 0.39596307, Test Loss: 0.38380291
+Epoch [20/100], Training Loss: 0.38792731, Test Loss: 0.37919529
+Epoch [30/100], Training Loss: 0.37962944, Test Loss: 0.36948757
+Epoch [40/100], Training Loss: 0.36101389, Test Loss: 0.36492562
+Epoch [50/100], Training Loss: 0.33503692, Test Loss: 0.34505236
+Epoch [60/100], Training Loss: 0.30690735, Test Loss: 0.31725362
+Epoch [70/100], Training Loss: 0.26353433, Test Loss: 0.28094128
+Epoch [80/100], Training Loss: 0.22381843, Test Loss: 0.24207386
+Epoch [90/100], Training Loss: 0.19789017, Test Loss: 0.21847939
+Epoch [100/100], Training Loss: 0.18395013, Test Loss: 0.20457450
+#
+**********************************************
+The reinforce process [0], collecting data ...
+Episode [0/4], Reward: 34.89304329, Step: [99/100]
+Episode [1/4], Reward: 33.96882250, Step: [99/100]
+Episode [2/4], Reward: 35.90385454, Step: [99/100]
+Episode [3/4], Reward: 34.09756564, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 813.1108152866364 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.20861997, Test Loss: 0.21302519
+Epoch [20/100], Training Loss: 0.19301064, Test Loss: 0.19973372
+Epoch [30/100], Training Loss: 0.18459351, Test Loss: 0.19441355
+Epoch [40/100], Training Loss: 0.17829151, Test Loss: 0.18966517
+Epoch [50/100], Training Loss: 0.17219498, Test Loss: 0.18181739
+Epoch [60/100], Training Loss: 0.16303285, Test Loss: 0.17917886
+Epoch [70/100], Training Loss: 0.15675794, Test Loss: 0.17444477
+Epoch [80/100], Training Loss: 0.15091845, Test Loss: 0.16925943
+Epoch [90/100], Training Loss: 0.14444467, Test Loss: 0.16729696
+Epoch [100/100], Training Loss: 0.13942772, Test Loss: 0.16161293
+**********************************************
+The reinforce process [1], collecting data ...
+Episode [0/4], Reward: 40.27608153, Step: [99/100]
+Episode [1/4], Reward: 37.13500690, Step: [99/100]
+Episode [2/4], Reward: 35.13717414, Step: [99/100]
+Episode [3/4], Reward: 39.82083276, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 919.2449266910553 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.15283067, Test Loss: 0.16273365
+Epoch [20/100], Training Loss: 0.14349657, Test Loss: 0.15693137
+Epoch [30/100], Training Loss: 0.13512994, Test Loss: 0.15080164
+Epoch [40/100], Training Loss: 0.12754196, Test Loss: 0.14568783
+Epoch [50/100], Training Loss: 0.12117371, Test Loss: 0.14274712
+Epoch [60/100], Training Loss: 0.11425037, Test Loss: 0.13842576
+Epoch [70/100], Training Loss: 0.10924647, Test Loss: 0.13497735
+Epoch [80/100], Training Loss: 0.10238626, Test Loss: 0.13045173
+Epoch [90/100], Training Loss: 0.09740018, Test Loss: 0.13192896
+Epoch [100/100], Training Loss: 0.09267558, Test Loss: 0.12519677
+**********************************************
+The reinforce process [2], collecting data ...
+Episode [0/4], Reward: 39.19231118, Step: [99/100]
+Episode [1/4], Reward: 39.19153727, Step: [99/100]
+Episode [2/4], Reward: 37.70745947, Step: [99/100]
+Episode [3/4], Reward: 34.83741026, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 803.5328841209412 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.11050913, Test Loss: 0.12218891
+Epoch [20/100], Training Loss: 0.09943462, Test Loss: 0.11880535
+Epoch [30/100], Training Loss: 0.09371796, Test Loss: 0.11833894
+Epoch [40/100], Training Loss: 0.08771059, Test Loss: 0.11252653
+Epoch [50/100], Training Loss: 0.08018860, Test Loss: 0.11082412
+Epoch [60/100], Training Loss: 0.07510542, Test Loss: 0.10788355
+Epoch [70/100], Training Loss: 0.07089191, Test Loss: 0.10652262
+Epoch [80/100], Training Loss: 0.06506441, Test Loss: 0.10623155
+Epoch [90/100], Training Loss: 0.06127256, Test Loss: 0.10254526
+Epoch [100/100], Training Loss: 0.05683467, Test Loss: 0.10092081
+**********************************************
+The reinforce process [3], collecting data ...
+Episode [0/4], Reward: 39.24024003, Step: [99/100]
+Episode [1/4], Reward: 40.52701210, Step: [99/100]
+Episode [2/4], Reward: 42.58641572, Step: [99/100]
+Episode [3/4], Reward: 39.60759742, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 780.7808752059937 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.07633367, Test Loss: 0.08899182
+Epoch [20/100], Training Loss: 0.06931474, Test Loss: 0.08658004
+Epoch [30/100], Training Loss: 0.06096526, Test Loss: 0.08606729
+Epoch [40/100], Training Loss: 0.05584032, Test Loss: 0.08236274
+Epoch [50/100], Training Loss: 0.05018791, Test Loss: 0.08126722
+Epoch [60/100], Training Loss: 0.04748172, Test Loss: 0.08309079
+Epoch [70/100], Training Loss: 0.04206000, Test Loss: 0.07768012
+Epoch [80/100], Training Loss: 0.03940830, Test Loss: 0.07654794
+Epoch [90/100], Training Loss: 0.03625824, Test Loss: 0.07634231
+Epoch [100/100], Training Loss: 0.03273122, Test Loss: 0.07622981
+**********************************************
+The reinforce process [4], collecting data ...
+Episode [0/4], Reward: 40.54394714, Step: [99/100]
+Episode [1/4], Reward: 38.86367479, Step: [99/100]
+Episode [2/4], Reward: 34.54724699, Step: [99/100]
+Episode [3/4], Reward: 38.97973269, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 750.7783737182617 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.06164832, Test Loss: 0.07296253
+Epoch [20/100], Training Loss: 0.05038397, Test Loss: 0.06634832
+Epoch [30/100], Training Loss: 0.04386525, Test Loss: 0.06568646
+Epoch [40/100], Training Loss: 0.03892578, Test Loss: 0.06238890
+Epoch [50/100], Training Loss: 0.03479966, Test Loss: 0.06182709
+Epoch [60/100], Training Loss: 0.03154810, Test Loss: 0.06248419
+Epoch [70/100], Training Loss: 0.02936173, Test Loss: 0.06094417
+Epoch [80/100], Training Loss: 0.02540504, Test Loss: 0.05989484
+Epoch [90/100], Training Loss: 0.02347592, Test Loss: 0.05934414
+Epoch [100/100], Training Loss: 0.02159826, Test Loss: 0.06040953
+**********************************************
+The reinforce process [5], collecting data ...
+Episode [0/4], Reward: 31.81161056, Step: [99/100]
+Episode [1/4], Reward: 40.84211937, Step: [99/100]
+Episode [2/4], Reward: 34.99436973, Step: [99/100]
+Episode [3/4], Reward: 37.81884051, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 752.2522332668304 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.04463038, Test Loss: 0.05596237
+Epoch [20/100], Training Loss: 0.03589955, Test Loss: 0.05252188
+Epoch [30/100], Training Loss: 0.03053243, Test Loss: 0.05074431
+Epoch [40/100], Training Loss: 0.02753150, Test Loss: 0.05040959
+Epoch [50/100], Training Loss: 0.02447257, Test Loss: 0.05010531
+Epoch [60/100], Training Loss: 0.02192503, Test Loss: 0.05001103
+Epoch [70/100], Training Loss: 0.02013400, Test Loss: 0.05054023
+Epoch [80/100], Training Loss: 0.01868195, Test Loss: 0.05063137
+Epoch [90/100], Training Loss: 0.01601016, Test Loss: 0.04974703
+Epoch [100/100], Training Loss: 0.01554685, Test Loss: 0.05014705
+**********************************************
+The reinforce process [6], collecting data ...
+Episode [0/4], Reward: 33.87191247, Step: [99/100]
+Episode [1/4], Reward: 33.40317850, Step: [99/100]
+Episode [2/4], Reward: 34.44252499, Step: [99/100]
+Episode [3/4], Reward: 35.60371209, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 784.0440092086792 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.03474342, Test Loss: 0.04453358
+Epoch [20/100], Training Loss: 0.02736677, Test Loss: 0.04127758
+Epoch [30/100], Training Loss: 0.02320828, Test Loss: 0.04027562
+Epoch [40/100], Training Loss: 0.01961531, Test Loss: 0.03916963
+Epoch [50/100], Training Loss: 0.01818304, Test Loss: 0.04019671
+Epoch [60/100], Training Loss: 0.01598364, Test Loss: 0.03921581
+Epoch [70/100], Training Loss: 0.01503463, Test Loss: 0.03989478
+Epoch [80/100], Training Loss: 0.01396720, Test Loss: 0.04074525
+Epoch [90/100], Training Loss: 0.01248765, Test Loss: 0.03980102
+Epoch [100/100], Training Loss: 0.01186673, Test Loss: 0.04031048
+**********************************************
+The reinforce process [7], collecting data ...
+Episode [0/4], Reward: 34.25675037, Step: [99/100]
+Episode [1/4], Reward: 36.40963145, Step: [99/100]
+Episode [2/4], Reward: 32.53145886, Step: [99/100]
+Episode [3/4], Reward: 38.89481064, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 921.5424606800079 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02590290, Test Loss: 0.03597503
+Epoch [20/100], Training Loss: 0.02027622, Test Loss: 0.03504748
+Epoch [30/100], Training Loss: 0.01617625, Test Loss: 0.03391539
+Epoch [40/100], Training Loss: 0.01381633, Test Loss: 0.03329442
+Epoch [50/100], Training Loss: 0.01249797, Test Loss: 0.03410084
+Epoch [60/100], Training Loss: 0.01158355, Test Loss: 0.03462968
+Epoch [70/100], Training Loss: 0.01029715, Test Loss: 0.03444528
+Epoch [80/100], Training Loss: 0.00984202, Test Loss: 0.03436412
+Epoch [90/100], Training Loss: 0.00893144, Test Loss: 0.03419929
+Epoch [100/100], Training Loss: 0.00841573, Test Loss: 0.03541773
+**********************************************
+The reinforce process [8], collecting data ...
+Episode [0/4], Reward: 35.19060005, Step: [99/100]
+Episode [1/4], Reward: 37.79758134, Step: [99/100]
+Episode [2/4], Reward: 39.35605385, Step: [99/100]
+Episode [3/4], Reward: 38.40202617, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 798.1314077377319 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02297498, Test Loss: 0.03171891
+Epoch [20/100], Training Loss: 0.01734274, Test Loss: 0.03011704
+Epoch [30/100], Training Loss: 0.01422010, Test Loss: 0.02968972
+Epoch [40/100], Training Loss: 0.01235241, Test Loss: 0.02886719
+Epoch [50/100], Training Loss: 0.01061407, Test Loss: 0.02902324
+Epoch [60/100], Training Loss: 0.01001544, Test Loss: 0.02895586
+Epoch [70/100], Training Loss: 0.00932562, Test Loss: 0.03002880
+Epoch [80/100], Training Loss: 0.00829131, Test Loss: 0.02916832
+Epoch [90/100], Training Loss: 0.00807095, Test Loss: 0.02988320
+Epoch [100/100], Training Loss: 0.00767907, Test Loss: 0.03059238
+**********************************************
+The reinforce process [9], collecting data ...
+Episode [0/4], Reward: 36.03994960, Step: [99/100]
+Episode [1/4], Reward: 35.18520351, Step: [99/100]
+Episode [2/4], Reward: 42.28720775, Step: [99/100]
+Episode [3/4], Reward: 32.70007472, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 770.2581350803375 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02114012, Test Loss: 0.03147527
+Epoch [20/100], Training Loss: 0.01595642, Test Loss: 0.02834331
+Epoch [30/100], Training Loss: 0.01285589, Test Loss: 0.02740732
+Epoch [40/100], Training Loss: 0.01177881, Test Loss: 0.02854216
+Epoch [50/100], Training Loss: 0.01049807, Test Loss: 0.02758180
+Epoch [60/100], Training Loss: 0.00967805, Test Loss: 0.02837444
+Epoch [70/100], Training Loss: 0.00882297, Test Loss: 0.02840892
+Epoch [80/100], Training Loss: 0.00815051, Test Loss: 0.02807990
+Epoch [90/100], Training Loss: 0.00815783, Test Loss: 0.02901755
+Epoch [100/100], Training Loss: 0.00739733, Test Loss: 0.02879525
+**********************************************
+The reinforce process [10], collecting data ...
+Episode [0/4], Reward: 33.53681030, Step: [99/100]
+Episode [1/4], Reward: 34.88591725, Step: [99/100]
+Episode [2/4], Reward: 33.79075555, Step: [99/100]
+Episode [3/4], Reward: 34.21334407, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 813.074693441391 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02019501, Test Loss: 0.02808234
+Epoch [20/100], Training Loss: 0.01401741, Test Loss: 0.02526998
+Epoch [30/100], Training Loss: 0.01164335, Test Loss: 0.02561560
+Epoch [40/100], Training Loss: 0.01003752, Test Loss: 0.02513910
+Epoch [50/100], Training Loss: 0.00918956, Test Loss: 0.02554242
+Epoch [60/100], Training Loss: 0.00849517, Test Loss: 0.02567853
+Epoch [70/100], Training Loss: 0.00769226, Test Loss: 0.02542743
+Epoch [80/100], Training Loss: 0.00724467, Test Loss: 0.02606537
+Epoch [90/100], Training Loss: 0.00688098, Test Loss: 0.02650527
+Epoch [100/100], Training Loss: 0.00702479, Test Loss: 0.02683273
+**********************************************
+The reinforce process [11], collecting data ...
+Episode [0/4], Reward: 38.55104045, Step: [99/100]
+Episode [1/4], Reward: 40.07491264, Step: [99/100]
+Episode [2/4], Reward: 37.42778529, Step: [99/100]
+Episode [3/4], Reward: 40.44381306, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 762.8806784152985 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01830160, Test Loss: 0.02559747
+Epoch [20/100], Training Loss: 0.01346640, Test Loss: 0.02382242
+Epoch [30/100], Training Loss: 0.01145857, Test Loss: 0.02386456
+Epoch [40/100], Training Loss: 0.00939521, Test Loss: 0.02300022
+Epoch [50/100], Training Loss: 0.00850680, Test Loss: 0.02348667
+Epoch [60/100], Training Loss: 0.00792696, Test Loss: 0.02344611
+Epoch [70/100], Training Loss: 0.00749446, Test Loss: 0.02417342
+Epoch [80/100], Training Loss: 0.00772998, Test Loss: 0.02497081
+Epoch [90/100], Training Loss: 0.00674357, Test Loss: 0.02433060
+Epoch [100/100], Training Loss: 0.00630302, Test Loss: 0.02469895
+**********************************************
+The reinforce process [12], collecting data ...
+Episode [0/4], Reward: 31.31658752, Step: [99/100]
+Episode [1/4], Reward: 40.70057503, Step: [99/100]
+Episode [2/4], Reward: 37.10083164, Step: [99/100]
+Episode [3/4], Reward: 33.50819511, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 749.4816792011261 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01801853, Test Loss: 0.02730166
+Epoch [20/100], Training Loss: 0.01263964, Test Loss: 0.02601713
+Epoch [30/100], Training Loss: 0.00996959, Test Loss: 0.02517728
+Epoch [40/100], Training Loss: 0.00882440, Test Loss: 0.02515064
+Epoch [50/100], Training Loss: 0.00762312, Test Loss: 0.02516946
+Epoch [60/100], Training Loss: 0.00686304, Test Loss: 0.02527566
+Epoch [70/100], Training Loss: 0.00665710, Test Loss: 0.02591512
+Epoch [80/100], Training Loss: 0.00591920, Test Loss: 0.02563695
+Epoch [90/100], Training Loss: 0.00621967, Test Loss: 0.02683351
+Epoch [100/100], Training Loss: 0.00580815, Test Loss: 0.02706992
+**********************************************
+The reinforce process [13], collecting data ...
+Episode [0/4], Reward: 33.81532169, Step: [99/100]
+Episode [1/4], Reward: 34.98130718, Step: [99/100]
+Episode [2/4], Reward: 41.70134765, Step: [99/100]
+Episode [3/4], Reward: 39.63835712, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 749.2678320407867 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01894018, Test Loss: 0.02807524
+Epoch [20/100], Training Loss: 0.01208948, Test Loss: 0.02498279
+Epoch [30/100], Training Loss: 0.01004351, Test Loss: 0.02397534
+Epoch [40/100], Training Loss: 0.00878140, Test Loss: 0.02449931
+Epoch [50/100], Training Loss: 0.00815338, Test Loss: 0.02448264
+Epoch [60/100], Training Loss: 0.00739683, Test Loss: 0.02499110
+Epoch [70/100], Training Loss: 0.00666068, Test Loss: 0.02511779
+Epoch [80/100], Training Loss: 0.00633310, Test Loss: 0.02595612
+Epoch [90/100], Training Loss: 0.00649335, Test Loss: 0.02623673
+Epoch [100/100], Training Loss: 0.00554538, Test Loss: 0.02635589
+**********************************************
+The reinforce process [14], collecting data ...
+Episode [0/4], Reward: 33.83235695, Step: [99/100]
+Episode [1/4], Reward: 38.62237017, Step: [99/100]
+Episode [2/4], Reward: 37.57223390, Step: [99/100]
+Episode [3/4], Reward: 34.57440075, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 747.7554738521576 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01526390, Test Loss: 0.02445264
+Epoch [20/100], Training Loss: 0.01073035, Test Loss: 0.02190740
+Epoch [30/100], Training Loss: 0.00899750, Test Loss: 0.02155705
+Epoch [40/100], Training Loss: 0.00767930, Test Loss: 0.02122068
+Epoch [50/100], Training Loss: 0.00696399, Test Loss: 0.02194316
+Epoch [60/100], Training Loss: 0.00675872, Test Loss: 0.02206290
+Epoch [70/100], Training Loss: 0.00614872, Test Loss: 0.02257514
+Epoch [80/100], Training Loss: 0.00587605, Test Loss: 0.02252937
+Epoch [90/100], Training Loss: 0.00558938, Test Loss: 0.02249943
+Epoch [100/100], Training Loss: 0.00539448, Test Loss: 0.02284535
+**********************************************
+The reinforce process [15], collecting data ...
+Episode [0/4], Reward: 34.91514857, Step: [99/100]
+Episode [1/4], Reward: 33.34938632, Step: [99/100]
+Episode [2/4], Reward: 36.05956804, Step: [99/100]
+Episode [3/4], Reward: 36.10385290, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 748.020266532898 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01588539, Test Loss: 0.02455634
+Epoch [20/100], Training Loss: 0.01105194, Test Loss: 0.02307052
+Epoch [30/100], Training Loss: 0.00971833, Test Loss: 0.02308159
+Epoch [40/100], Training Loss: 0.00827483, Test Loss: 0.02286563
+Epoch [50/100], Training Loss: 0.00790265, Test Loss: 0.02377949
+Epoch [60/100], Training Loss: 0.00740655, Test Loss: 0.02383464
+Epoch [70/100], Training Loss: 0.00670605, Test Loss: 0.02390704
+Epoch [80/100], Training Loss: 0.00667888, Test Loss: 0.02462827
+Epoch [90/100], Training Loss: 0.00665625, Test Loss: 0.02491576
+Epoch [100/100], Training Loss: 0.00626418, Test Loss: 0.02517101
+**********************************************
+The reinforce process [16], collecting data ...
+Episode [0/4], Reward: 35.69421979, Step: [99/100]
+Episode [1/4], Reward: 39.95047903, Step: [99/100]
+Episode [2/4], Reward: 35.25077797, Step: [99/100]
+Episode [3/4], Reward: 41.04469261, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 753.1352269649506 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01466519, Test Loss: 0.02374036
+Epoch [20/100], Training Loss: 0.00956458, Test Loss: 0.02126130
+Epoch [30/100], Training Loss: 0.00810292, Test Loss: 0.02167907
+Epoch [40/100], Training Loss: 0.00749811, Test Loss: 0.02199741
+Epoch [50/100], Training Loss: 0.00690156, Test Loss: 0.02158267
+Epoch [60/100], Training Loss: 0.00611014, Test Loss: 0.02197044
+Epoch [70/100], Training Loss: 0.00591348, Test Loss: 0.02189829
+Epoch [80/100], Training Loss: 0.00539191, Test Loss: 0.02227889
+Epoch [90/100], Training Loss: 0.00536879, Test Loss: 0.02281378
+Epoch [100/100], Training Loss: 0.00570920, Test Loss: 0.02364324
+**********************************************
+The reinforce process [17], collecting data ...
+Episode [0/4], Reward: 41.37256391, Step: [99/100]
+Episode [1/4], Reward: 32.64608301, Step: [99/100]
+Episode [2/4], Reward: 38.04078817, Step: [99/100]
+Episode [3/4], Reward: 39.54578493, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 744.5010287761688 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01461067, Test Loss: 0.02432732
+Epoch [20/100], Training Loss: 0.00980977, Test Loss: 0.02256837
+Epoch [30/100], Training Loss: 0.00820508, Test Loss: 0.02207587
+Epoch [40/100], Training Loss: 0.00753623, Test Loss: 0.02225469
+Epoch [50/100], Training Loss: 0.00644605, Test Loss: 0.02275985
+Epoch [60/100], Training Loss: 0.00592209, Test Loss: 0.02272942
+Epoch [70/100], Training Loss: 0.00580866, Test Loss: 0.02345083
+Epoch [80/100], Training Loss: 0.00556206, Test Loss: 0.02359166
+Epoch [90/100], Training Loss: 0.00548811, Test Loss: 0.02380385
+Epoch [100/100], Training Loss: 0.00493225, Test Loss: 0.02397518
+**********************************************
+The reinforce process [18], collecting data ...
+Episode [0/4], Reward: 35.24672111, Step: [99/100]
+Episode [1/4], Reward: 32.79264327, Step: [99/100]
+Episode [2/4], Reward: 38.37600537, Step: [99/100]
+Episode [3/4], Reward: 41.01312980, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 744.4697074890137 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01385057, Test Loss: 0.02315229
+Epoch [20/100], Training Loss: 0.00934615, Test Loss: 0.02157922
+Epoch [30/100], Training Loss: 0.00748405, Test Loss: 0.02161962
+Epoch [40/100], Training Loss: 0.00650376, Test Loss: 0.02143618
+Epoch [50/100], Training Loss: 0.00637941, Test Loss: 0.02177097
+Epoch [60/100], Training Loss: 0.00535043, Test Loss: 0.02207633
+Epoch [70/100], Training Loss: 0.00515821, Test Loss: 0.02214629
+Epoch [80/100], Training Loss: 0.00511369, Test Loss: 0.02284768
+Epoch [90/100], Training Loss: 0.00454369, Test Loss: 0.02297531
+Epoch [100/100], Training Loss: 0.00480629, Test Loss: 0.02360536
+**********************************************
+The reinforce process [19], collecting data ...
+Episode [0/4], Reward: 40.71144009, Step: [99/100]
+Episode [1/4], Reward: 32.05371892, Step: [99/100]
+Episode [2/4], Reward: 33.03646790, Step: [99/100]
+Episode [3/4], Reward: 31.58736264, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 747.1013686656952 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01563032, Test Loss: 0.02330747
+Epoch [20/100], Training Loss: 0.01015336, Test Loss: 0.02054174
+Epoch [30/100], Training Loss: 0.00874398, Test Loss: 0.02103527
+Epoch [40/100], Training Loss: 0.00768367, Test Loss: 0.02117572
+Epoch [50/100], Training Loss: 0.00715081, Test Loss: 0.02089017
+Epoch [60/100], Training Loss: 0.00661503, Test Loss: 0.02112221
+Epoch [70/100], Training Loss: 0.00587232, Test Loss: 0.02142891
+Epoch [80/100], Training Loss: 0.00588169, Test Loss: 0.02207028
+Epoch [90/100], Training Loss: 0.00567984, Test Loss: 0.02254883
+Epoch [100/100], Training Loss: 0.00559926, Test Loss: 0.02242630
+**********************************************
+The reinforce process [20], collecting data ...
+Episode [0/4], Reward: 34.70839528, Step: [99/100]
+Episode [1/4], Reward: 31.37350458, Step: [99/100]
+Episode [2/4], Reward: 32.13643645, Step: [99/100]
+Episode [3/4], Reward: 33.35210076, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 751.9563839435577 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01305380, Test Loss: 0.02231257
+Epoch [20/100], Training Loss: 0.00926916, Test Loss: 0.02079410
+Epoch [30/100], Training Loss: 0.00742231, Test Loss: 0.02085913
+Epoch [40/100], Training Loss: 0.00668022, Test Loss: 0.02129002
+Epoch [50/100], Training Loss: 0.00627910, Test Loss: 0.02177893
+Epoch [60/100], Training Loss: 0.00595072, Test Loss: 0.02205389
+Epoch [70/100], Training Loss: 0.00556598, Test Loss: 0.02259585
+Epoch [80/100], Training Loss: 0.00571639, Test Loss: 0.02309833
+Epoch [90/100], Training Loss: 0.00498667, Test Loss: 0.02273226
+Epoch [100/100], Training Loss: 0.00492905, Test Loss: 0.02320062
+**********************************************
+The reinforce process [21], collecting data ...
+Episode [0/4], Reward: 40.80240511, Step: [99/100]
+Episode [1/4], Reward: 39.84035104, Step: [99/100]
+Episode [2/4], Reward: 33.58671176, Step: [99/100]
+Episode [3/4], Reward: 41.47815700, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 746.8439090251923 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01313693, Test Loss: 0.02316555
+Epoch [20/100], Training Loss: 0.00931677, Test Loss: 0.02181431
+Epoch [30/100], Training Loss: 0.00758284, Test Loss: 0.02183010
+Epoch [40/100], Training Loss: 0.00626479, Test Loss: 0.02142018
+Epoch [50/100], Training Loss: 0.00638969, Test Loss: 0.02230696
+Epoch [60/100], Training Loss: 0.00609712, Test Loss: 0.02256858
+Epoch [70/100], Training Loss: 0.00518220, Test Loss: 0.02237859
+Epoch [80/100], Training Loss: 0.00510962, Test Loss: 0.02299941
+Epoch [90/100], Training Loss: 0.00512686, Test Loss: 0.02329366
+Epoch [100/100], Training Loss: 0.00493125, Test Loss: 0.02399932
+**********************************************
+The reinforce process [22], collecting data ...
+Episode [0/4], Reward: 39.51130507, Step: [99/100]
+Episode [1/4], Reward: 39.76818404, Step: [99/100]
+Episode [2/4], Reward: 38.72211591, Step: [99/100]
+Episode [3/4], Reward: 40.48562358, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 744.3968729972839 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01312877, Test Loss: 0.02676945
+Epoch [20/100], Training Loss: 0.00888432, Test Loss: 0.02458684
+Epoch [30/100], Training Loss: 0.00713165, Test Loss: 0.02474375
+Epoch [40/100], Training Loss: 0.00611880, Test Loss: 0.02474205
+Epoch [50/100], Training Loss: 0.00584337, Test Loss: 0.02522857
+Epoch [60/100], Training Loss: 0.00524230, Test Loss: 0.02540783
+Epoch [70/100], Training Loss: 0.00500211, Test Loss: 0.02614352
+Epoch [80/100], Training Loss: 0.00460781, Test Loss: 0.02634105
+Epoch [90/100], Training Loss: 0.00447477, Test Loss: 0.02686668
+Epoch [100/100], Training Loss: 0.00421915, Test Loss: 0.02697819
+**********************************************
+The reinforce process [23], collecting data ...
+Episode [0/4], Reward: 33.09356514, Step: [99/100]
+Episode [1/4], Reward: 41.74277950, Step: [99/100]
+Episode [2/4], Reward: 40.61480064, Step: [99/100]
+Episode [3/4], Reward: 37.62591000, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 747.7789041996002 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01427701, Test Loss: 0.02573024
+Epoch [20/100], Training Loss: 0.01054516, Test Loss: 0.02520051
+Epoch [30/100], Training Loss: 0.00911040, Test Loss: 0.02501752
+Epoch [40/100], Training Loss: 0.00746149, Test Loss: 0.02461831
+Epoch [50/100], Training Loss: 0.00713137, Test Loss: 0.02544436
+Epoch [60/100], Training Loss: 0.00640838, Test Loss: 0.02524478
+Epoch [70/100], Training Loss: 0.00617852, Test Loss: 0.02622088
+Epoch [80/100], Training Loss: 0.00642845, Test Loss: 0.02678951
+Epoch [90/100], Training Loss: 0.00584801, Test Loss: 0.02659959
+Epoch [100/100], Training Loss: 0.00538279, Test Loss: 0.02684710
+**********************************************
+The reinforce process [24], collecting data ...
+Episode [0/4], Reward: 39.69725655, Step: [99/100]
+Episode [1/4], Reward: 41.50406347, Step: [99/100]
+Episode [2/4], Reward: 38.02051693, Step: [99/100]
+Episode [3/4], Reward: 39.67657385, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 744.1982553005219 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01511259, Test Loss: 0.02693781
+Epoch [20/100], Training Loss: 0.01075106, Test Loss: 0.02569339
+Epoch [30/100], Training Loss: 0.00869766, Test Loss: 0.02484331
+Epoch [40/100], Training Loss: 0.00755639, Test Loss: 0.02517681
+Epoch [50/100], Training Loss: 0.00720113, Test Loss: 0.02627535
+Epoch [60/100], Training Loss: 0.00640569, Test Loss: 0.02610984
+Epoch [70/100], Training Loss: 0.00612788, Test Loss: 0.02653560
+Epoch [80/100], Training Loss: 0.00541902, Test Loss: 0.02719966
+Epoch [90/100], Training Loss: 0.00541435, Test Loss: 0.02746194
+Epoch [100/100], Training Loss: 0.00503496, Test Loss: 0.02774092
+**********************************************
+The reinforce process [25], collecting data ...
+Episode [0/4], Reward: 36.18663514, Step: [99/100]
+Episode [1/4], Reward: 38.43497443, Step: [99/100]
+Episode [2/4], Reward: 31.67924948, Step: [99/100]
+Episode [3/4], Reward: 37.91681584, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 751.4369745254517 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01328135, Test Loss: 0.02732711
+Epoch [20/100], Training Loss: 0.00973497, Test Loss: 0.02660761
+Epoch [30/100], Training Loss: 0.00786205, Test Loss: 0.02642702
+Epoch [40/100], Training Loss: 0.00709003, Test Loss: 0.02712605
+Epoch [50/100], Training Loss: 0.00637090, Test Loss: 0.02701313
+Epoch [60/100], Training Loss: 0.00568231, Test Loss: 0.02737267
+Epoch [70/100], Training Loss: 0.00529980, Test Loss: 0.02755692
+Epoch [80/100], Training Loss: 0.00530480, Test Loss: 0.02814120
+Epoch [90/100], Training Loss: 0.00518524, Test Loss: 0.02873149
+Epoch [100/100], Training Loss: 0.00478714, Test Loss: 0.02933845
+**********************************************
+The reinforce process [26], collecting data ...
+Episode [0/4], Reward: 36.21732475, Step: [99/100]
+Episode [1/4], Reward: 32.71643830, Step: [99/100]
+Episode [2/4], Reward: 37.12763935, Step: [99/100]
+Episode [3/4], Reward: 34.89868556, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 749.4861631393433 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01268244, Test Loss: 0.02601321
+Epoch [20/100], Training Loss: 0.00838996, Test Loss: 0.02385160
+Epoch [30/100], Training Loss: 0.00706711, Test Loss: 0.02415893
+Epoch [40/100], Training Loss: 0.00624141, Test Loss: 0.02420858
+Epoch [50/100], Training Loss: 0.00572944, Test Loss: 0.02455838
+Epoch [60/100], Training Loss: 0.00565426, Test Loss: 0.02505540
+Epoch [70/100], Training Loss: 0.00536257, Test Loss: 0.02527769
+Epoch [80/100], Training Loss: 0.00464063, Test Loss: 0.02567184
+Epoch [90/100], Training Loss: 0.00481488, Test Loss: 0.02632791
+Epoch [100/100], Training Loss: 0.00451904, Test Loss: 0.02653314
+**********************************************
+The reinforce process [27], collecting data ...
+Episode [0/4], Reward: 38.52804641, Step: [99/100]
+Episode [1/4], Reward: 33.71114135, Step: [99/100]
+Episode [2/4], Reward: 41.26225545, Step: [99/100]
+Episode [3/4], Reward: 33.65468462, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 749.3021380901337 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01243517, Test Loss: 0.02514335
+Epoch [20/100], Training Loss: 0.00862924, Test Loss: 0.02366022
+Epoch [30/100], Training Loss: 0.00732733, Test Loss: 0.02352696
+Epoch [40/100], Training Loss: 0.00620818, Test Loss: 0.02337286
+Epoch [50/100], Training Loss: 0.00581309, Test Loss: 0.02379680
+Epoch [60/100], Training Loss: 0.00590452, Test Loss: 0.02501003
+Epoch [70/100], Training Loss: 0.00521773, Test Loss: 0.02473495
+Epoch [80/100], Training Loss: 0.00529817, Test Loss: 0.02549795
+Epoch [90/100], Training Loss: 0.00524639, Test Loss: 0.02573965
+Epoch [100/100], Training Loss: 0.00479616, Test Loss: 0.02623610
+**********************************************
+The reinforce process [28], collecting data ...
+Episode [0/4], Reward: 33.99971543, Step: [99/100]
+Episode [1/4], Reward: 32.50541017, Step: [99/100]
+Episode [2/4], Reward: 35.80862417, Step: [99/100]
+Episode [3/4], Reward: 36.54228859, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 750.5160949230194 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01297734, Test Loss: 0.02684112
+Epoch [20/100], Training Loss: 0.00860060, Test Loss: 0.02550217
+Epoch [30/100], Training Loss: 0.00711016, Test Loss: 0.02594609
+Epoch [40/100], Training Loss: 0.00607962, Test Loss: 0.02608630
+Epoch [50/100], Training Loss: 0.00557634, Test Loss: 0.02641562
+Epoch [60/100], Training Loss: 0.00536369, Test Loss: 0.02686125
+Epoch [70/100], Training Loss: 0.00512180, Test Loss: 0.02713984
+Epoch [80/100], Training Loss: 0.00448540, Test Loss: 0.02707547
+Epoch [90/100], Training Loss: 0.00443041, Test Loss: 0.02768365
+Epoch [100/100], Training Loss: 0.00433636, Test Loss: 0.02824771
+**********************************************
+The reinforce process [29], collecting data ...
+Episode [0/4], Reward: 35.36252041, Step: [99/100]
+Episode [1/4], Reward: 36.10659536, Step: [99/100]
+Episode [2/4], Reward: 37.84066588, Step: [99/100]
+Episode [3/4], Reward: 39.17143623, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 752.2209181785583 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01418698, Test Loss: 0.02724924
+Epoch [20/100], Training Loss: 0.00966944, Test Loss: 0.02616338
+Epoch [30/100], Training Loss: 0.00818787, Test Loss: 0.02532913
+Epoch [40/100], Training Loss: 0.00725818, Test Loss: 0.02591159
+Epoch [50/100], Training Loss: 0.00674790, Test Loss: 0.02617753
+Epoch [60/100], Training Loss: 0.00637186, Test Loss: 0.02673923
+Epoch [70/100], Training Loss: 0.00588366, Test Loss: 0.02677400
+Epoch [80/100], Training Loss: 0.00578935, Test Loss: 0.02704632
+Epoch [90/100], Training Loss: 0.00549359, Test Loss: 0.02801357
+Epoch [100/100], Training Loss: 0.00534099, Test Loss: 0.02835321
+**********************************************
+The reinforce process [30], collecting data ...
+Episode [0/4], Reward: 40.48483454, Step: [99/100]
+Episode [1/4], Reward: 39.82911326, Step: [99/100]
+Episode [2/4], Reward: 35.15564225, Step: [99/100]
+Episode [3/4], Reward: 32.19661715, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 750.4089248180389 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01120304, Test Loss: 0.02505444
+Epoch [20/100], Training Loss: 0.00784702, Test Loss: 0.02353891
+Epoch [30/100], Training Loss: 0.00643179, Test Loss: 0.02373652
+Epoch [40/100], Training Loss: 0.00582218, Test Loss: 0.02431679
+Epoch [50/100], Training Loss: 0.00521129, Test Loss: 0.02475125
+Epoch [60/100], Training Loss: 0.00487660, Test Loss: 0.02524799
+Epoch [70/100], Training Loss: 0.00475526, Test Loss: 0.02541047
+Epoch [80/100], Training Loss: 0.00413617, Test Loss: 0.02550582
+Epoch [90/100], Training Loss: 0.00401121, Test Loss: 0.02607767
+Epoch [100/100], Training Loss: 0.00380074, Test Loss: 0.02656367
+**********************************************
+The reinforce process [31], collecting data ...
+Episode [0/4], Reward: 40.79565283, Step: [99/100]
+Episode [1/4], Reward: 33.83810043, Step: [99/100]
+Episode [2/4], Reward: 32.48761045, Step: [99/100]
+Episode [3/4], Reward: 33.01037992, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 752.713686466217 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01236897, Test Loss: 0.02706821
+Epoch [20/100], Training Loss: 0.00789351, Test Loss: 0.02512855
+Epoch [30/100], Training Loss: 0.00624220, Test Loss: 0.02505179
+Epoch [40/100], Training Loss: 0.00546739, Test Loss: 0.02535513
+Epoch [50/100], Training Loss: 0.00493658, Test Loss: 0.02628200
+Epoch [60/100], Training Loss: 0.00423424, Test Loss: 0.02609599
+Epoch [70/100], Training Loss: 0.00405593, Test Loss: 0.02668339
+Epoch [80/100], Training Loss: 0.00404964, Test Loss: 0.02711760
+Epoch [90/100], Training Loss: 0.00368235, Test Loss: 0.02715708
+Epoch [100/100], Training Loss: 0.00386320, Test Loss: 0.02773151
+**********************************************
+The reinforce process [32], collecting data ...
+Episode [0/4], Reward: 36.80228874, Step: [99/100]
+Episode [1/4], Reward: 36.95915115, Step: [99/100]
+Episode [2/4], Reward: 37.29708525, Step: [99/100]
+Episode [3/4], Reward: 37.95909970, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 745.1883790493011 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01212770, Test Loss: 0.02535848
+Epoch [20/100], Training Loss: 0.00752514, Test Loss: 0.02386046
+Epoch [30/100], Training Loss: 0.00600309, Test Loss: 0.02383193
+Epoch [40/100], Training Loss: 0.00544387, Test Loss: 0.02410186
+Epoch [50/100], Training Loss: 0.00484081, Test Loss: 0.02421798
+Epoch [60/100], Training Loss: 0.00461103, Test Loss: 0.02457325
+Epoch [70/100], Training Loss: 0.00421644, Test Loss: 0.02516415
+Epoch [80/100], Training Loss: 0.00388695, Test Loss: 0.02529540
+Epoch [90/100], Training Loss: 0.00453160, Test Loss: 0.02650678
+Epoch [100/100], Training Loss: 0.00375444, Test Loss: 0.02620700
+**********************************************
+The reinforce process [33], collecting data ...
+Episode [0/4], Reward: 40.31078920, Step: [99/100]
+Episode [1/4], Reward: 40.79278253, Step: [99/100]
+Episode [2/4], Reward: 35.57791551, Step: [99/100]
+Episode [3/4], Reward: 39.01574859, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 742.7078583240509 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01384819, Test Loss: 0.02983027
+Epoch [20/100], Training Loss: 0.00927704, Test Loss: 0.02798854
+Epoch [30/100], Training Loss: 0.00733199, Test Loss: 0.02796483
+Epoch [40/100], Training Loss: 0.00648984, Test Loss: 0.02859898
+Epoch [50/100], Training Loss: 0.00603644, Test Loss: 0.02867977
+Epoch [60/100], Training Loss: 0.00536702, Test Loss: 0.02891686
+Epoch [70/100], Training Loss: 0.00506117, Test Loss: 0.02945014
+Epoch [80/100], Training Loss: 0.00450438, Test Loss: 0.02951903
+Epoch [90/100], Training Loss: 0.00450888, Test Loss: 0.03003946
+Epoch [100/100], Training Loss: 0.00438870, Test Loss: 0.03060312
+**********************************************
+The reinforce process [34], collecting data ...
+Episode [0/4], Reward: 40.80849639, Step: [99/100]
+Episode [1/4], Reward: 31.78182647, Step: [99/100]
+Episode [2/4], Reward: 38.05805418, Step: [99/100]
+Episode [3/4], Reward: 36.26655459, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 757.8169901371002 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01153012, Test Loss: 0.02700273
+Epoch [20/100], Training Loss: 0.00774055, Test Loss: 0.02622724
+Epoch [30/100], Training Loss: 0.00638225, Test Loss: 0.02655317
+Epoch [40/100], Training Loss: 0.00560879, Test Loss: 0.02668871
+Epoch [50/100], Training Loss: 0.00510822, Test Loss: 0.02723006
+Epoch [60/100], Training Loss: 0.00472694, Test Loss: 0.02776993
+Epoch [70/100], Training Loss: 0.00429393, Test Loss: 0.02759460
+Epoch [80/100], Training Loss: 0.00407494, Test Loss: 0.02806936
+Epoch [90/100], Training Loss: 0.00393736, Test Loss: 0.02864049
+Epoch [100/100], Training Loss: 0.00369582, Test Loss: 0.02892396
+**********************************************
+The reinforce process [35], collecting data ...
+Episode [0/4], Reward: 32.90703041, Step: [99/100]
+Episode [1/4], Reward: 37.21560179, Step: [99/100]
+Episode [2/4], Reward: 38.88924938, Step: [99/100]
+Episode [3/4], Reward: 40.54522325, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 756.5201733112335 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01209936, Test Loss: 0.02793447
+Epoch [20/100], Training Loss: 0.00902143, Test Loss: 0.02817648
+Epoch [30/100], Training Loss: 0.00668503, Test Loss: 0.02687709
+Epoch [40/100], Training Loss: 0.00593800, Test Loss: 0.02735887
+Epoch [50/100], Training Loss: 0.00549372, Test Loss: 0.02791404
+Epoch [60/100], Training Loss: 0.00530183, Test Loss: 0.02833149
+Epoch [70/100], Training Loss: 0.00475180, Test Loss: 0.02799179
+Epoch [80/100], Training Loss: 0.00508994, Test Loss: 0.02848319
+Epoch [90/100], Training Loss: 0.00499317, Test Loss: 0.02914549
+Epoch [100/100], Training Loss: 0.00441824, Test Loss: 0.02910899
+**********************************************
+The reinforce process [36], collecting data ...
+Episode [0/4], Reward: 36.05733000, Step: [99/100]
+Episode [1/4], Reward: 37.68425432, Step: [99/100]
+Episode [2/4], Reward: 33.34104620, Step: [99/100]
+Episode [3/4], Reward: 37.48535723, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 758.2696352005005 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01181123, Test Loss: 0.02773393
+Epoch [20/100], Training Loss: 0.00799574, Test Loss: 0.02669365
+Epoch [30/100], Training Loss: 0.00670810, Test Loss: 0.02703009
+Epoch [40/100], Training Loss: 0.00576760, Test Loss: 0.02680242
+Epoch [50/100], Training Loss: 0.00562347, Test Loss: 0.02766844
+Epoch [60/100], Training Loss: 0.00522770, Test Loss: 0.02794198
+Epoch [70/100], Training Loss: 0.00466360, Test Loss: 0.02819489
+Epoch [80/100], Training Loss: 0.00479643, Test Loss: 0.02912894
+Epoch [90/100], Training Loss: 0.00444759, Test Loss: 0.02925607
+Epoch [100/100], Training Loss: 0.00428625, Test Loss: 0.02994487
+**********************************************
+The reinforce process [37], collecting data ...
+Episode [0/4], Reward: 37.27694539, Step: [99/100]
+Episode [1/4], Reward: 40.45503451, Step: [99/100]
+Episode [2/4], Reward: 37.77576619, Step: [99/100]
+Episode [3/4], Reward: 42.79451804, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 752.6023211479187 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01236691, Test Loss: 0.02938997
+Epoch [20/100], Training Loss: 0.00839940, Test Loss: 0.02818674
+Epoch [30/100], Training Loss: 0.00669869, Test Loss: 0.02830240
+Epoch [40/100], Training Loss: 0.00578798, Test Loss: 0.02794760
+Epoch [50/100], Training Loss: 0.00518929, Test Loss: 0.02834682
+Epoch [60/100], Training Loss: 0.00471442, Test Loss: 0.02875146
+Epoch [70/100], Training Loss: 0.00463257, Test Loss: 0.02933411
+Epoch [80/100], Training Loss: 0.00451478, Test Loss: 0.02973381
+Epoch [90/100], Training Loss: 0.00421615, Test Loss: 0.03016727
+Epoch [100/100], Training Loss: 0.00400918, Test Loss: 0.03064198
+**********************************************
+The reinforce process [38], collecting data ...
+Episode [0/4], Reward: 36.31649998, Step: [99/100]
+Episode [1/4], Reward: 36.91636286, Step: [99/100]
+Episode [2/4], Reward: 43.31685576, Step: [99/100]
+Episode [3/4], Reward: 37.17678120, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 755.2887370586395 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01560799, Test Loss: 0.03377920
+Epoch [20/100], Training Loss: 0.01012597, Test Loss: 0.03144075
+Epoch [30/100], Training Loss: 0.00795465, Test Loss: 0.03158166
+Epoch [40/100], Training Loss: 0.00690315, Test Loss: 0.03201464
+Epoch [50/100], Training Loss: 0.00640130, Test Loss: 0.03260811
+Epoch [60/100], Training Loss: 0.00606031, Test Loss: 0.03269222
+Epoch [70/100], Training Loss: 0.00578725, Test Loss: 0.03328254
+Epoch [80/100], Training Loss: 0.00571351, Test Loss: 0.03412877
+Epoch [90/100], Training Loss: 0.00487580, Test Loss: 0.03385783
+Epoch [100/100], Training Loss: 0.00484739, Test Loss: 0.03499128
+**********************************************
+The reinforce process [39], collecting data ...
+Episode [0/4], Reward: 40.85449332, Step: [99/100]
+Episode [1/4], Reward: 33.88522666, Step: [99/100]
+Episode [2/4], Reward: 34.88438728, Step: [99/100]
+Episode [3/4], Reward: 32.91664325, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 760.4035637378693 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01193064, Test Loss: 0.02826905
+Epoch [20/100], Training Loss: 0.00791014, Test Loss: 0.02748058
+Epoch [30/100], Training Loss: 0.00637818, Test Loss: 0.02740889
+Epoch [40/100], Training Loss: 0.00566097, Test Loss: 0.02766818
+Epoch [50/100], Training Loss: 0.00516513, Test Loss: 0.02814505
+Epoch [60/100], Training Loss: 0.00462464, Test Loss: 0.02852637
+Epoch [70/100], Training Loss: 0.00454603, Test Loss: 0.02920236
+Epoch [80/100], Training Loss: 0.00440009, Test Loss: 0.02938760
+Epoch [90/100], Training Loss: 0.00409398, Test Loss: 0.02955182
+Epoch [100/100], Training Loss: 0.00418090, Test Loss: 0.03007637
+**********************************************
+The reinforce process [40], collecting data ...
+Episode [0/4], Reward: 34.87264363, Step: [99/100]
+Episode [1/4], Reward: 33.96995314, Step: [99/100]
+Episode [2/4], Reward: 40.94942072, Step: [99/100]
+Episode [3/4], Reward: 32.44096444, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 760.3764567375183 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01418164, Test Loss: 0.03435097
+Epoch [20/100], Training Loss: 0.00935701, Test Loss: 0.03291237
+Epoch [30/100], Training Loss: 0.00759601, Test Loss: 0.03268916
+Epoch [40/100], Training Loss: 0.00626407, Test Loss: 0.03320594
+Epoch [50/100], Training Loss: 0.00586453, Test Loss: 0.03369918
+Epoch [60/100], Training Loss: 0.00539759, Test Loss: 0.03475349
+Epoch [70/100], Training Loss: 0.00507257, Test Loss: 0.03501194
+Epoch [80/100], Training Loss: 0.00469172, Test Loss: 0.03506221
+Epoch [90/100], Training Loss: 0.00453110, Test Loss: 0.03573122
+Epoch [100/100], Training Loss: 0.00443102, Test Loss: 0.03660701
+**********************************************
+The reinforce process [41], collecting data ...
+Episode [0/4], Reward: 35.94357980, Step: [99/100]
+Episode [1/4], Reward: 39.57009342, Step: [99/100]
+Episode [2/4], Reward: 33.41480725, Step: [99/100]
+Episode [3/4], Reward: 40.45127087, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 753.3867297172546 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01610541, Test Loss: 0.03660118
+Epoch [20/100], Training Loss: 0.00992577, Test Loss: 0.03425240
+Epoch [30/100], Training Loss: 0.00794838, Test Loss: 0.03421910
+Epoch [40/100], Training Loss: 0.00694977, Test Loss: 0.03496519
+Epoch [50/100], Training Loss: 0.00644434, Test Loss: 0.03619793
+Epoch [60/100], Training Loss: 0.00578818, Test Loss: 0.03591666
+Epoch [70/100], Training Loss: 0.00504418, Test Loss: 0.03547798
+Epoch [80/100], Training Loss: 0.00485613, Test Loss: 0.03605212
+Epoch [90/100], Training Loss: 0.00445290, Test Loss: 0.03676867
+Epoch [100/100], Training Loss: 0.00431593, Test Loss: 0.03757109
+**********************************************
+The reinforce process [42], collecting data ...
+Episode [0/4], Reward: 37.02994255, Step: [99/100]
+Episode [1/4], Reward: 33.34283164, Step: [99/100]
+Episode [2/4], Reward: 33.86810497, Step: [99/100]
+Episode [3/4], Reward: 41.75547378, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 747.945732831955 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01348896, Test Loss: 0.03374254
+Epoch [20/100], Training Loss: 0.00946722, Test Loss: 0.03242043
+Epoch [30/100], Training Loss: 0.00718481, Test Loss: 0.03196713
+Epoch [40/100], Training Loss: 0.00645773, Test Loss: 0.03243658
+Epoch [50/100], Training Loss: 0.00594262, Test Loss: 0.03261804
+Epoch [60/100], Training Loss: 0.00526800, Test Loss: 0.03264655
+Epoch [70/100], Training Loss: 0.00523901, Test Loss: 0.03330071
+Epoch [80/100], Training Loss: 0.00475829, Test Loss: 0.03358135
+Epoch [90/100], Training Loss: 0.00468438, Test Loss: 0.03421644
+Epoch [100/100], Training Loss: 0.00420740, Test Loss: 0.03451854
+**********************************************
+The reinforce process [43], collecting data ...
+Episode [0/4], Reward: 39.23301635, Step: [99/100]
+Episode [1/4], Reward: 35.03319760, Step: [99/100]
+Episode [2/4], Reward: 37.47810458, Step: [99/100]
+Episode [3/4], Reward: 34.66894244, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 755.7833857536316 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01239766, Test Loss: 0.03323226
+Epoch [20/100], Training Loss: 0.00878801, Test Loss: 0.03190667
+Epoch [30/100], Training Loss: 0.00713247, Test Loss: 0.03201066
+Epoch [40/100], Training Loss: 0.00619567, Test Loss: 0.03257777
+Epoch [50/100], Training Loss: 0.00585953, Test Loss: 0.03278156
+Epoch [60/100], Training Loss: 0.00516150, Test Loss: 0.03287893
+Epoch [70/100], Training Loss: 0.00504922, Test Loss: 0.03341417
+Epoch [80/100], Training Loss: 0.00474001, Test Loss: 0.03379058
+Epoch [90/100], Training Loss: 0.00445882, Test Loss: 0.03440231
+Epoch [100/100], Training Loss: 0.00472037, Test Loss: 0.03484082
+**********************************************
+The reinforce process [44], collecting data ...
+Episode [0/4], Reward: 37.48063216, Step: [99/100]
+Episode [1/4], Reward: 41.34418808, Step: [99/100]
+Episode [2/4], Reward: 42.44066216, Step: [99/100]
+Episode [3/4], Reward: 35.87234265, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 759.6183190345764 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01110420, Test Loss: 0.03126158
+Epoch [20/100], Training Loss: 0.00742918, Test Loss: 0.02976089
+Epoch [30/100], Training Loss: 0.00623533, Test Loss: 0.02990458
+Epoch [40/100], Training Loss: 0.00543296, Test Loss: 0.03021768
+Epoch [50/100], Training Loss: 0.00491970, Test Loss: 0.03078529
+Epoch [60/100], Training Loss: 0.00452039, Test Loss: 0.03107631
+Epoch [70/100], Training Loss: 0.00411283, Test Loss: 0.03149531
+Epoch [80/100], Training Loss: 0.00397066, Test Loss: 0.03214673
+Epoch [90/100], Training Loss: 0.00381812, Test Loss: 0.03266712
+Epoch [100/100], Training Loss: 0.00370909, Test Loss: 0.03309796
+**********************************************
+The reinforce process [45], collecting data ...
+Episode [0/4], Reward: 37.89852633, Step: [99/100]
+Episode [1/4], Reward: 35.59100758, Step: [99/100]
+Episode [2/4], Reward: 34.82173386, Step: [99/100]
+Episode [3/4], Reward: 41.45210277, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 884.792971611023 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01405044, Test Loss: 0.03602763
+Epoch [20/100], Training Loss: 0.00940313, Test Loss: 0.03474345
+Epoch [30/100], Training Loss: 0.00757891, Test Loss: 0.03477120
+Epoch [40/100], Training Loss: 0.00657489, Test Loss: 0.03521015
+Epoch [50/100], Training Loss: 0.00592238, Test Loss: 0.03530384
+Epoch [60/100], Training Loss: 0.00539785, Test Loss: 0.03564727
+Epoch [70/100], Training Loss: 0.00525402, Test Loss: 0.03614122
+Epoch [80/100], Training Loss: 0.00460926, Test Loss: 0.03651035
+Epoch [90/100], Training Loss: 0.00454589, Test Loss: 0.03730935
+Epoch [100/100], Training Loss: 0.00463881, Test Loss: 0.03802661
+**********************************************
+The reinforce process [46], collecting data ...
+Episode [0/4], Reward: 33.30693694, Step: [99/100]
+Episode [1/4], Reward: 37.11211773, Step: [99/100]
+Episode [2/4], Reward: 33.14297402, Step: [99/100]
+Episode [3/4], Reward: 36.33132588, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 1017.3244862556458 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01358755, Test Loss: 0.03361314
+Epoch [20/100], Training Loss: 0.00856408, Test Loss: 0.03211125
+Epoch [30/100], Training Loss: 0.00684581, Test Loss: 0.03212524
+Epoch [40/100], Training Loss: 0.00589796, Test Loss: 0.03253324
+Epoch [50/100], Training Loss: 0.00529407, Test Loss: 0.03265968
+Epoch [60/100], Training Loss: 0.00496077, Test Loss: 0.03340085
+Epoch [70/100], Training Loss: 0.00449891, Test Loss: 0.03319767
+Epoch [80/100], Training Loss: 0.00429517, Test Loss: 0.03355368
+Epoch [90/100], Training Loss: 0.00415748, Test Loss: 0.03408987
+Epoch [100/100], Training Loss: 0.00400331, Test Loss: 0.03451641
+**********************************************
+The reinforce process [47], collecting data ...
+Episode [0/4], Reward: 37.68589354, Step: [99/100]
+Episode [1/4], Reward: 41.29013221, Step: [99/100]
+Episode [2/4], Reward: 33.25133095, Step: [99/100]
+Episode [3/4], Reward: 39.18221137, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 1089.0528073310852 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01395533, Test Loss: 0.03653180
+Epoch [20/100], Training Loss: 0.00911864, Test Loss: 0.03513566
+Epoch [30/100], Training Loss: 0.00672832, Test Loss: 0.03486053
+Epoch [40/100], Training Loss: 0.00587811, Test Loss: 0.03560337
+Epoch [50/100], Training Loss: 0.00564861, Test Loss: 0.03659845
+Epoch [60/100], Training Loss: 0.00480697, Test Loss: 0.03655281
+Epoch [70/100], Training Loss: 0.00479375, Test Loss: 0.03721585
+Epoch [80/100], Training Loss: 0.00425012, Test Loss: 0.03741421
+Epoch [90/100], Training Loss: 0.00444984, Test Loss: 0.03839076
+Epoch [100/100], Training Loss: 0.00396534, Test Loss: 0.03863998
+**********************************************
+The reinforce process [48], collecting data ...
+Episode [0/4], Reward: 39.74629012, Step: [99/100]
+Episode [1/4], Reward: 35.91260611, Step: [99/100]
+Episode [2/4], Reward: 41.42178946, Step: [99/100]
+Episode [3/4], Reward: 32.89440687, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 869.7711338996887 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01186381, Test Loss: 0.03517707
+Epoch [20/100], Training Loss: 0.00779239, Test Loss: 0.03441707
+Epoch [30/100], Training Loss: 0.00618468, Test Loss: 0.03430013
+Epoch [40/100], Training Loss: 0.00542819, Test Loss: 0.03500512
+Epoch [50/100], Training Loss: 0.00499575, Test Loss: 0.03546952
+Epoch [60/100], Training Loss: 0.00453757, Test Loss: 0.03573727
+Epoch [70/100], Training Loss: 0.00457031, Test Loss: 0.03668473
+Epoch [80/100], Training Loss: 0.00410968, Test Loss: 0.03719926
+Epoch [90/100], Training Loss: 0.00402624, Test Loss: 0.03731030
+Epoch [100/100], Training Loss: 0.00380153, Test Loss: 0.03751665
+**********************************************
+The reinforce process [49], collecting data ...
+Episode [0/4], Reward: 38.45101450, Step: [99/100]
+Episode [1/4], Reward: 41.22653189, Step: [99/100]
+Episode [2/4], Reward: 33.72422958, Step: [99/100]
+Episode [3/4], Reward: 38.97313352, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 808.4723346233368 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01350604, Test Loss: 0.03447885
+Epoch [20/100], Training Loss: 0.00941607, Test Loss: 0.03358739
+Epoch [30/100], Training Loss: 0.00710498, Test Loss: 0.03347198
+Epoch [40/100], Training Loss: 0.00595647, Test Loss: 0.03383633
+Epoch [50/100], Training Loss: 0.00534178, Test Loss: 0.03450786
+Epoch [60/100], Training Loss: 0.00500068, Test Loss: 0.03522420
+Epoch [70/100], Training Loss: 0.00460580, Test Loss: 0.03540321
+Epoch [80/100], Training Loss: 0.00434618, Test Loss: 0.03609908
+Epoch [90/100], Training Loss: 0.00422907, Test Loss: 0.03661383
+Epoch [100/100], Training Loss: 0.00404215, Test Loss: 0.03707882
+**********************************************
+The reinforce process [50], collecting data ...
+Episode [0/4], Reward: 34.63561121, Step: [99/100]
+Episode [1/4], Reward: 38.40657878, Step: [99/100]
+Episode [2/4], Reward: 39.58778541, Step: [99/100]
+Episode [3/4], Reward: 35.04608768, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 813.2103428840637 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01149949, Test Loss: 0.03506742
+Epoch [20/100], Training Loss: 0.00740128, Test Loss: 0.03455506
+Epoch [30/100], Training Loss: 0.00611680, Test Loss: 0.03477432
+Epoch [40/100], Training Loss: 0.00547064, Test Loss: 0.03520332
+Epoch [50/100], Training Loss: 0.00492686, Test Loss: 0.03595006
+Epoch [60/100], Training Loss: 0.00441267, Test Loss: 0.03610489
+Epoch [70/100], Training Loss: 0.00405138, Test Loss: 0.03657025
+Epoch [80/100], Training Loss: 0.00414184, Test Loss: 0.03748282
+Epoch [90/100], Training Loss: 0.00390119, Test Loss: 0.03786633
+Epoch [100/100], Training Loss: 0.00341235, Test Loss: 0.03789258
+**********************************************
+The reinforce process [51], collecting data ...
+Episode [0/4], Reward: 39.23806696, Step: [99/100]
+Episode [1/4], Reward: 35.88468584, Step: [99/100]
+Episode [2/4], Reward: 34.26596758, Step: [99/100]
+Episode [3/4], Reward: 38.08370831, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 833.2797420024872 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01343061, Test Loss: 0.03685048
+Epoch [20/100], Training Loss: 0.00900307, Test Loss: 0.03641595
+Epoch [30/100], Training Loss: 0.00727878, Test Loss: 0.03577948
+Epoch [40/100], Training Loss: 0.00660928, Test Loss: 0.03619880
+Epoch [50/100], Training Loss: 0.00545789, Test Loss: 0.03615992
+Epoch [60/100], Training Loss: 0.00544333, Test Loss: 0.03720603
+Epoch [70/100], Training Loss: 0.00500724, Test Loss: 0.03822065
+Epoch [80/100], Training Loss: 0.00486287, Test Loss: 0.03860599
+Epoch [90/100], Training Loss: 0.00464146, Test Loss: 0.03868703
+Epoch [100/100], Training Loss: 0.00436763, Test Loss: 0.03907302
+**********************************************
+The reinforce process [52], collecting data ...
+Episode [0/4], Reward: 37.76789511, Step: [99/100]
+Episode [1/4], Reward: 40.33416317, Step: [99/100]
+Episode [2/4], Reward: 36.62505319, Step: [99/100]
+Episode [3/4], Reward: 32.48750844, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 830.0955998897552 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01354925, Test Loss: 0.04010793
+Epoch [20/100], Training Loss: 0.00849677, Test Loss: 0.03904572
+Epoch [30/100], Training Loss: 0.00703605, Test Loss: 0.03870648
+Epoch [40/100], Training Loss: 0.00573875, Test Loss: 0.03924642
+Epoch [50/100], Training Loss: 0.00529540, Test Loss: 0.03995834
+Epoch [60/100], Training Loss: 0.00504618, Test Loss: 0.04021043
+Epoch [70/100], Training Loss: 0.00450781, Test Loss: 0.04087517
+Epoch [80/100], Training Loss: 0.00424627, Test Loss: 0.04168761
+Epoch [90/100], Training Loss: 0.00433739, Test Loss: 0.04225920
+Epoch [100/100], Training Loss: 0.00394284, Test Loss: 0.04240138
+**********************************************
+The reinforce process [53], collecting data ...
+Episode [0/4], Reward: 42.11768025, Step: [99/100]
+Episode [1/4], Reward: 37.89339873, Step: [99/100]
+Episode [2/4], Reward: 38.88745925, Step: [99/100]
+Episode [3/4], Reward: 32.43822362, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 817.6701183319092 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01248018, Test Loss: 0.03895601
+Epoch [20/100], Training Loss: 0.00831962, Test Loss: 0.03753889
+Epoch [30/100], Training Loss: 0.00658839, Test Loss: 0.03768886
+Epoch [40/100], Training Loss: 0.00559024, Test Loss: 0.03757863
+Epoch [50/100], Training Loss: 0.00503663, Test Loss: 0.03806852
+Epoch [60/100], Training Loss: 0.00456625, Test Loss: 0.03847551
+Epoch [70/100], Training Loss: 0.00441748, Test Loss: 0.03909095
+Epoch [80/100], Training Loss: 0.00400784, Test Loss: 0.03929229
+Epoch [90/100], Training Loss: 0.00402338, Test Loss: 0.03986105
+Epoch [100/100], Training Loss: 0.00383575, Test Loss: 0.04025159
+**********************************************
+The reinforce process [54], collecting data ...
+Episode [0/4], Reward: 34.63505940, Step: [99/100]
+Episode [1/4], Reward: 42.32155928, Step: [99/100]
+Episode [2/4], Reward: 36.73790873, Step: [99/100]
+Episode [3/4], Reward: 34.69154466, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 811.059900522232 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01275473, Test Loss: 0.03814683
+Epoch [20/100], Training Loss: 0.00860949, Test Loss: 0.03735030
+Epoch [30/100], Training Loss: 0.00718817, Test Loss: 0.03782114
+Epoch [40/100], Training Loss: 0.00627739, Test Loss: 0.03848851
+Epoch [50/100], Training Loss: 0.00569011, Test Loss: 0.03914030
+Epoch [60/100], Training Loss: 0.00511477, Test Loss: 0.03972059
+Epoch [70/100], Training Loss: 0.00491726, Test Loss: 0.04047251
+Epoch [80/100], Training Loss: 0.00457776, Test Loss: 0.04074360
+Epoch [90/100], Training Loss: 0.00414795, Test Loss: 0.04149885
+Epoch [100/100], Training Loss: 0.00407532, Test Loss: 0.04208424
+**********************************************
+The reinforce process [55], collecting data ...
+Episode [0/4], Reward: 39.26345490, Step: [99/100]
+Episode [1/4], Reward: 34.40390030, Step: [99/100]
+Episode [2/4], Reward: 34.30460189, Step: [99/100]
+Episode [3/4], Reward: 35.08877199, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 811.4219934940338 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01257946, Test Loss: 0.03765072
+Epoch [20/100], Training Loss: 0.00787837, Test Loss: 0.03641685
+Epoch [30/100], Training Loss: 0.00617706, Test Loss: 0.03595661
+Epoch [40/100], Training Loss: 0.00518852, Test Loss: 0.03627534
+Epoch [50/100], Training Loss: 0.00475808, Test Loss: 0.03705582
+Epoch [60/100], Training Loss: 0.00447081, Test Loss: 0.03723025
+Epoch [70/100], Training Loss: 0.00395614, Test Loss: 0.03764331
+Epoch [80/100], Training Loss: 0.00397655, Test Loss: 0.03825415
+Epoch [90/100], Training Loss: 0.00388173, Test Loss: 0.03844068
+Epoch [100/100], Training Loss: 0.00349149, Test Loss: 0.03913335
+**********************************************
+The reinforce process [56], collecting data ...
+Episode [0/4], Reward: 34.08733167, Step: [99/100]
+Episode [1/4], Reward: 37.08723142, Step: [99/100]
+Episode [2/4], Reward: 36.92964815, Step: [99/100]
+Episode [3/4], Reward: 37.74341252, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 775.5826342105865 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01268734, Test Loss: 0.03867545
+Epoch [20/100], Training Loss: 0.00809602, Test Loss: 0.03833969
+Epoch [30/100], Training Loss: 0.00636296, Test Loss: 0.03889358
+Epoch [40/100], Training Loss: 0.00560254, Test Loss: 0.03908680
+Epoch [50/100], Training Loss: 0.00498604, Test Loss: 0.03944012
+Epoch [60/100], Training Loss: 0.00455838, Test Loss: 0.04007173
+Epoch [70/100], Training Loss: 0.00434425, Test Loss: 0.04077402
+Epoch [80/100], Training Loss: 0.00389026, Test Loss: 0.04112529
+Epoch [90/100], Training Loss: 0.00395687, Test Loss: 0.04163987
+Epoch [100/100], Training Loss: 0.00368715, Test Loss: 0.04185276
+**********************************************
+The reinforce process [57], collecting data ...
+Episode [0/4], Reward: 31.94994631, Step: [99/100]
+Episode [1/4], Reward: 32.82377528, Step: [99/100]
+Episode [2/4], Reward: 35.81071668, Step: [99/100]
+Episode [3/4], Reward: 32.57259538, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 753.3685557842255 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01406992, Test Loss: 0.04601113
+Epoch [20/100], Training Loss: 0.00938337, Test Loss: 0.04406105
+Epoch [30/100], Training Loss: 0.00752407, Test Loss: 0.04441451
+Epoch [40/100], Training Loss: 0.00657822, Test Loss: 0.04489772
+Epoch [50/100], Training Loss: 0.00578629, Test Loss: 0.04497483
+Epoch [60/100], Training Loss: 0.00536716, Test Loss: 0.04596240
+Epoch [70/100], Training Loss: 0.00498801, Test Loss: 0.04623180
+Epoch [80/100], Training Loss: 0.00468685, Test Loss: 0.04702163
+Epoch [90/100], Training Loss: 0.00452709, Test Loss: 0.04729400
+Epoch [100/100], Training Loss: 0.00455087, Test Loss: 0.04833080
+**********************************************
+The reinforce process [58], collecting data ...
+Episode [0/4], Reward: 33.88394095, Step: [99/100]
+Episode [1/4], Reward: 36.53959059, Step: [99/100]
+Episode [2/4], Reward: 33.97941588, Step: [99/100]
+Episode [3/4], Reward: 35.98291257, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 754.2616720199585 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01356465, Test Loss: 0.04247921
+Epoch [20/100], Training Loss: 0.00862973, Test Loss: 0.04185831
+Epoch [30/100], Training Loss: 0.00687307, Test Loss: 0.04154091
+Epoch [40/100], Training Loss: 0.00595434, Test Loss: 0.04159269
+Epoch [50/100], Training Loss: 0.00519828, Test Loss: 0.04189996
+Epoch [60/100], Training Loss: 0.00487881, Test Loss: 0.04238261
+Epoch [70/100], Training Loss: 0.00450440, Test Loss: 0.04293263
+Epoch [80/100], Training Loss: 0.00416476, Test Loss: 0.04347628
+Epoch [90/100], Training Loss: 0.00407855, Test Loss: 0.04383731
+Epoch [100/100], Training Loss: 0.00395525, Test Loss: 0.04439963
+**********************************************
+The reinforce process [59], collecting data ...
+Episode [0/4], Reward: 38.23927708, Step: [99/100]
+Episode [1/4], Reward: 33.85480829, Step: [99/100]
+Episode [2/4], Reward: 41.09756539, Step: [99/100]
+Episode [3/4], Reward: 36.12746167, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 755.9531264305115 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01407954, Test Loss: 0.04379530
+Epoch [20/100], Training Loss: 0.00953059, Test Loss: 0.04292150
+Epoch [30/100], Training Loss: 0.00764080, Test Loss: 0.04333463
+Epoch [40/100], Training Loss: 0.00637922, Test Loss: 0.04315670
+Epoch [50/100], Training Loss: 0.00565042, Test Loss: 0.04409794
+Epoch [60/100], Training Loss: 0.00498065, Test Loss: 0.04455851
+Epoch [70/100], Training Loss: 0.00468702, Test Loss: 0.04528837
+Epoch [80/100], Training Loss: 0.00454515, Test Loss: 0.04604366
+Epoch [90/100], Training Loss: 0.00431006, Test Loss: 0.04686553
+Epoch [100/100], Training Loss: 0.00396932, Test Loss: 0.04760451
+**********************************************
+The reinforce process [60], collecting data ...
+Episode [0/4], Reward: 40.80296268, Step: [99/100]
+Episode [1/4], Reward: 39.90584151, Step: [99/100]
+Episode [2/4], Reward: 41.22822223, Step: [99/100]
+Episode [3/4], Reward: 37.80396368, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 752.3883287906647 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01522609, Test Loss: 0.04402782
+Epoch [20/100], Training Loss: 0.01005769, Test Loss: 0.04327172
+Epoch [30/100], Training Loss: 0.00849308, Test Loss: 0.04362667
+Epoch [40/100], Training Loss: 0.00715716, Test Loss: 0.04356751
+Epoch [50/100], Training Loss: 0.00663699, Test Loss: 0.04370514
+Epoch [60/100], Training Loss: 0.00591794, Test Loss: 0.04467394
+Epoch [70/100], Training Loss: 0.00593413, Test Loss: 0.04452442
+Epoch [80/100], Training Loss: 0.00531135, Test Loss: 0.04571252
+Epoch [90/100], Training Loss: 0.00591289, Test Loss: 0.04594591
+Epoch [100/100], Training Loss: 0.00477185, Test Loss: 0.04663672
+**********************************************
+The reinforce process [61], collecting data ...
+Episode [0/4], Reward: 39.13944337, Step: [99/100]
+Episode [1/4], Reward: 36.49871317, Step: [99/100]
+Episode [2/4], Reward: 31.85489549, Step: [99/100]
+Episode [3/4], Reward: 41.53976392, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 751.417032957077 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01321073, Test Loss: 0.04670285
+Epoch [20/100], Training Loss: 0.00937455, Test Loss: 0.04717314
+Epoch [30/100], Training Loss: 0.00700250, Test Loss: 0.04592142
+Epoch [40/100], Training Loss: 0.00638188, Test Loss: 0.04609477
+Epoch [50/100], Training Loss: 0.00541453, Test Loss: 0.04649338
+Epoch [60/100], Training Loss: 0.00497022, Test Loss: 0.04671708
+Epoch [70/100], Training Loss: 0.00472121, Test Loss: 0.04766414
+Epoch [80/100], Training Loss: 0.00442737, Test Loss: 0.04799847
+Epoch [90/100], Training Loss: 0.00425698, Test Loss: 0.04870306
+Epoch [100/100], Training Loss: 0.00386035, Test Loss: 0.04891845
+**********************************************
+The reinforce process [62], collecting data ...
+Episode [0/4], Reward: 39.46062163, Step: [99/100]
+Episode [1/4], Reward: 41.35092134, Step: [99/100]
+Episode [2/4], Reward: 33.13667457, Step: [99/100]
+Episode [3/4], Reward: 36.05958842, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 757.9581196308136 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01304326, Test Loss: 0.04313560
+Epoch [20/100], Training Loss: 0.00858818, Test Loss: 0.04177805
+Epoch [30/100], Training Loss: 0.00724938, Test Loss: 0.04222021
+Epoch [40/100], Training Loss: 0.00594382, Test Loss: 0.04261601
+Epoch [50/100], Training Loss: 0.00524671, Test Loss: 0.04276599
+Epoch [60/100], Training Loss: 0.00488026, Test Loss: 0.04315598
+Epoch [70/100], Training Loss: 0.00458378, Test Loss: 0.04354357
+Epoch [80/100], Training Loss: 0.00438623, Test Loss: 0.04401282
+Epoch [90/100], Training Loss: 0.00425928, Test Loss: 0.04476266
+Epoch [100/100], Training Loss: 0.00378190, Test Loss: 0.04471035
+**********************************************
+The reinforce process [63], collecting data ...
+Episode [0/4], Reward: 36.90305771, Step: [99/100]
+Episode [1/4], Reward: 38.81632093, Step: [99/100]
+Episode [2/4], Reward: 34.94883580, Step: [99/100]
+Episode [3/4], Reward: 32.19942663, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 783.1797280311584 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01325314, Test Loss: 0.04551953
+Epoch [20/100], Training Loss: 0.00804583, Test Loss: 0.04319736
+Epoch [30/100], Training Loss: 0.00630373, Test Loss: 0.04340565
+Epoch [40/100], Training Loss: 0.00551449, Test Loss: 0.04411571
+Epoch [50/100], Training Loss: 0.00487960, Test Loss: 0.04443160
+Epoch [60/100], Training Loss: 0.00461825, Test Loss: 0.04498591
+Epoch [70/100], Training Loss: 0.00414163, Test Loss: 0.04524633
+Epoch [80/100], Training Loss: 0.00397155, Test Loss: 0.04558216
+Epoch [90/100], Training Loss: 0.00388701, Test Loss: 0.04623979
+Epoch [100/100], Training Loss: 0.00384358, Test Loss: 0.04706128
+**********************************************
+The reinforce process [64], collecting data ...
+Episode [0/4], Reward: 32.13618291, Step: [99/100]
+Episode [1/4], Reward: 41.22417297, Step: [99/100]
+Episode [2/4], Reward: 34.05277560, Step: [99/100]
+Episode [3/4], Reward: 37.32760702, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 805.1219189167023 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01933541, Test Loss: 0.06038773
+Epoch [20/100], Training Loss: 0.01249695, Test Loss: 0.05808115
+Epoch [30/100], Training Loss: 0.00971128, Test Loss: 0.05714751
+Epoch [40/100], Training Loss: 0.00827738, Test Loss: 0.05738121
+Epoch [50/100], Training Loss: 0.00703944, Test Loss: 0.05739456
+Epoch [60/100], Training Loss: 0.00680029, Test Loss: 0.05785382
+Epoch [70/100], Training Loss: 0.00600879, Test Loss: 0.05872658
+Epoch [80/100], Training Loss: 0.00560237, Test Loss: 0.05883981
+Epoch [90/100], Training Loss: 0.00550959, Test Loss: 0.05941221
+Epoch [100/100], Training Loss: 0.00482834, Test Loss: 0.05947071
+**********************************************
+The reinforce process [65], collecting data ...
+Episode [0/4], Reward: 33.03035214, Step: [99/100]
+Episode [1/4], Reward: 39.61945308, Step: [99/100]
+Episode [2/4], Reward: 37.14658037, Step: [99/100]
+Episode [3/4], Reward: 41.37608741, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 800.6245505809784 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01770500, Test Loss: 0.05312005
+Epoch [20/100], Training Loss: 0.01109827, Test Loss: 0.05215667
+Epoch [30/100], Training Loss: 0.00902903, Test Loss: 0.05180822
+Epoch [40/100], Training Loss: 0.00743504, Test Loss: 0.05241731
+Epoch [50/100], Training Loss: 0.00679779, Test Loss: 0.05223961
+Epoch [60/100], Training Loss: 0.00581544, Test Loss: 0.05242226
+Epoch [70/100], Training Loss: 0.00548453, Test Loss: 0.05306546
+Epoch [80/100], Training Loss: 0.00519737, Test Loss: 0.05388535
+Epoch [90/100], Training Loss: 0.00463173, Test Loss: 0.05380200
+Epoch [100/100], Training Loss: 0.00471146, Test Loss: 0.05477226
+**********************************************
+The reinforce process [66], collecting data ...
+Episode [0/4], Reward: 37.13535400, Step: [99/100]
+Episode [1/4], Reward: 40.47321982, Step: [99/100]
+Episode [2/4], Reward: 35.07064789, Step: [99/100]
+Episode [3/4], Reward: 34.67424082, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 811.8857293128967 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01685336, Test Loss: 0.05748305
+Epoch [20/100], Training Loss: 0.01078941, Test Loss: 0.05573114
+Epoch [30/100], Training Loss: 0.00856268, Test Loss: 0.05531099
+Epoch [40/100], Training Loss: 0.00715280, Test Loss: 0.05577024
+Epoch [50/100], Training Loss: 0.00623056, Test Loss: 0.05566232
+Epoch [60/100], Training Loss: 0.00535961, Test Loss: 0.05590602
+Epoch [70/100], Training Loss: 0.00496715, Test Loss: 0.05649548
+Epoch [80/100], Training Loss: 0.00459060, Test Loss: 0.05667987
+Epoch [90/100], Training Loss: 0.00434204, Test Loss: 0.05678347
+Epoch [100/100], Training Loss: 0.00447191, Test Loss: 0.05824638
+**********************************************
+The reinforce process [67], collecting data ...
+Episode [0/4], Reward: 41.55284261, Step: [99/100]
+Episode [1/4], Reward: 41.89684820, Step: [99/100]
+Episode [2/4], Reward: 33.48149931, Step: [99/100]
+Episode [3/4], Reward: 34.46279598, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 806.2304368019104 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01567381, Test Loss: 0.05514378
+Epoch [20/100], Training Loss: 0.01024479, Test Loss: 0.05396572
+Epoch [30/100], Training Loss: 0.00799351, Test Loss: 0.05370847
+Epoch [40/100], Training Loss: 0.00697319, Test Loss: 0.05446392
+Epoch [50/100], Training Loss: 0.00633608, Test Loss: 0.05524717
+Epoch [60/100], Training Loss: 0.00565085, Test Loss: 0.05555909
+Epoch [70/100], Training Loss: 0.00529321, Test Loss: 0.05605782
+Epoch [80/100], Training Loss: 0.00491184, Test Loss: 0.05672590
+Epoch [90/100], Training Loss: 0.00456307, Test Loss: 0.05704962
+Epoch [100/100], Training Loss: 0.00440883, Test Loss: 0.05764589
+**********************************************
+The reinforce process [68], collecting data ...
+Episode [0/4], Reward: 34.19337379, Step: [99/100]
+Episode [1/4], Reward: 35.86653762, Step: [99/100]
+Episode [2/4], Reward: 33.36345427, Step: [99/100]
+Episode [3/4], Reward: 35.36185440, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 804.5293638706207 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01962815, Test Loss: 0.05966631
+Epoch [20/100], Training Loss: 0.01386278, Test Loss: 0.05765736
+Epoch [30/100], Training Loss: 0.00922644, Test Loss: 0.05631829
+Epoch [40/100], Training Loss: 0.00857261, Test Loss: 0.05713688
+Epoch [50/100], Training Loss: 0.00762063, Test Loss: 0.05783658
+Epoch [60/100], Training Loss: 0.00688482, Test Loss: 0.05886324
+Epoch [70/100], Training Loss: 0.00637750, Test Loss: 0.05870202
+Epoch [80/100], Training Loss: 0.00602611, Test Loss: 0.05998694
+Epoch [90/100], Training Loss: 0.00513476, Test Loss: 0.05966973
+Epoch [100/100], Training Loss: 0.00510990, Test Loss: 0.06070607
+**********************************************
+The reinforce process [69], collecting data ...
+Episode [0/4], Reward: 31.72012824, Step: [99/100]
+Episode [1/4], Reward: 40.64619621, Step: [99/100]
+Episode [2/4], Reward: 37.82825348, Step: [99/100]
+Episode [3/4], Reward: 31.49622792, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 818.2451224327087 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01331948, Test Loss: 0.04797307
+Epoch [20/100], Training Loss: 0.00853696, Test Loss: 0.04656581
+Epoch [30/100], Training Loss: 0.00701544, Test Loss: 0.04666039
+Epoch [40/100], Training Loss: 0.00584398, Test Loss: 0.04717569
+Epoch [50/100], Training Loss: 0.00522733, Test Loss: 0.04721602
+Epoch [60/100], Training Loss: 0.00475178, Test Loss: 0.04768158
+Epoch [70/100], Training Loss: 0.00438561, Test Loss: 0.04793577
+Epoch [80/100], Training Loss: 0.00414782, Test Loss: 0.04848196
+Epoch [90/100], Training Loss: 0.00396235, Test Loss: 0.04891622
+Epoch [100/100], Training Loss: 0.00377242, Test Loss: 0.04897147
+**********************************************
+The reinforce process [70], collecting data ...
+Episode [0/4], Reward: 40.86567187, Step: [99/100]
+Episode [1/4], Reward: 33.58721521, Step: [99/100]
+Episode [2/4], Reward: 34.00986553, Step: [99/100]
+Episode [3/4], Reward: 38.30385898, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 803.656572341919 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01652615, Test Loss: 0.05345306
+Epoch [20/100], Training Loss: 0.01102381, Test Loss: 0.05232690
+Epoch [30/100], Training Loss: 0.00819493, Test Loss: 0.05218703
+Epoch [40/100], Training Loss: 0.00730643, Test Loss: 0.05189398
+Epoch [50/100], Training Loss: 0.00625841, Test Loss: 0.05259417
+Epoch [60/100], Training Loss: 0.00582215, Test Loss: 0.05329362
+Epoch [70/100], Training Loss: 0.00549451, Test Loss: 0.05397978
+Epoch [80/100], Training Loss: 0.00516279, Test Loss: 0.05478342
+Epoch [90/100], Training Loss: 0.00479414, Test Loss: 0.05472246
+Epoch [100/100], Training Loss: 0.00484088, Test Loss: 0.05582054
+**********************************************
+The reinforce process [71], collecting data ...
+Episode [0/4], Reward: 41.19475180, Step: [99/100]
+Episode [1/4], Reward: 38.57915626, Step: [99/100]
+Episode [2/4], Reward: 33.74238531, Step: [99/100]
+Episode [3/4], Reward: 37.15305144, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 805.9782221317291 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01575436, Test Loss: 0.05303069
+Epoch [20/100], Training Loss: 0.01037616, Test Loss: 0.05254914
+Epoch [30/100], Training Loss: 0.00806280, Test Loss: 0.05227924
+Epoch [40/100], Training Loss: 0.00674509, Test Loss: 0.05266529
+Epoch [50/100], Training Loss: 0.00592117, Test Loss: 0.05296280
+Epoch [60/100], Training Loss: 0.00571780, Test Loss: 0.05372203
+Epoch [70/100], Training Loss: 0.00504007, Test Loss: 0.05429367
+Epoch [80/100], Training Loss: 0.00488951, Test Loss: 0.05500896
+Epoch [90/100], Training Loss: 0.00441106, Test Loss: 0.05523593
+Epoch [100/100], Training Loss: 0.00446447, Test Loss: 0.05626184
+**********************************************
+The reinforce process [72], collecting data ...
+Episode [0/4], Reward: 42.42951269, Step: [99/100]
+Episode [1/4], Reward: 34.06891536, Step: [99/100]
+Episode [2/4], Reward: 40.97243568, Step: [99/100]
+Episode [3/4], Reward: 36.30014680, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 805.5615923404694 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01546513, Test Loss: 0.05628337
+Epoch [20/100], Training Loss: 0.00995078, Test Loss: 0.05538686
+Epoch [30/100], Training Loss: 0.00792968, Test Loss: 0.05622614
+Epoch [40/100], Training Loss: 0.00706810, Test Loss: 0.05599427
+Epoch [50/100], Training Loss: 0.00593484, Test Loss: 0.05668880
+Epoch [60/100], Training Loss: 0.00558722, Test Loss: 0.05741539
+Epoch [70/100], Training Loss: 0.00486086, Test Loss: 0.05802503
+Epoch [80/100], Training Loss: 0.00465448, Test Loss: 0.05823618
+Epoch [90/100], Training Loss: 0.00463197, Test Loss: 0.05907794
+Epoch [100/100], Training Loss: 0.00419628, Test Loss: 0.05947802
+**********************************************
+The reinforce process [73], collecting data ...
+Episode [0/4], Reward: 33.77832870, Step: [99/100]
+Episode [1/4], Reward: 38.47676441, Step: [99/100]
+Episode [2/4], Reward: 32.69056438, Step: [99/100]
+Episode [3/4], Reward: 37.23006177, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 809.8862307071686 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01925986, Test Loss: 0.05306519
+Epoch [20/100], Training Loss: 0.01198740, Test Loss: 0.05230927
+Epoch [30/100], Training Loss: 0.00974176, Test Loss: 0.05233606
+Epoch [40/100], Training Loss: 0.00824777, Test Loss: 0.05298201
+Epoch [50/100], Training Loss: 0.00733793, Test Loss: 0.05378116
+Epoch [60/100], Training Loss: 0.00635241, Test Loss: 0.05330368
+Epoch [70/100], Training Loss: 0.00632363, Test Loss: 0.05460949
+Epoch [80/100], Training Loss: 0.00569786, Test Loss: 0.05487606
+Epoch [90/100], Training Loss: 0.00538407, Test Loss: 0.05556154
+Epoch [100/100], Training Loss: 0.00491130, Test Loss: 0.05616333
+**********************************************
+The reinforce process [74], collecting data ...
+Episode [0/4], Reward: 41.79678655, Step: [99/100]
+Episode [1/4], Reward: 38.72012188, Step: [99/100]
+Episode [2/4], Reward: 41.32562709, Step: [99/100]
+Episode [3/4], Reward: 37.14345969, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 806.1350750923157 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01602129, Test Loss: 0.05084016
+Epoch [20/100], Training Loss: 0.01012971, Test Loss: 0.04916035
+Epoch [30/100], Training Loss: 0.00807438, Test Loss: 0.05020245
+Epoch [40/100], Training Loss: 0.00692106, Test Loss: 0.05015853
+Epoch [50/100], Training Loss: 0.00618615, Test Loss: 0.05068508
+Epoch [60/100], Training Loss: 0.00574629, Test Loss: 0.05111982
+Epoch [70/100], Training Loss: 0.00558984, Test Loss: 0.05163222
+Epoch [80/100], Training Loss: 0.00505079, Test Loss: 0.05208618
+Epoch [90/100], Training Loss: 0.00460343, Test Loss: 0.05247117
+Epoch [100/100], Training Loss: 0.00469724, Test Loss: 0.05320643
+**********************************************
+The reinforce process [75], collecting data ...
+Episode [0/4], Reward: 42.99171790, Step: [99/100]
+Episode [1/4], Reward: 38.50159517, Step: [99/100]
+Episode [2/4], Reward: 34.16800349, Step: [99/100]
+Episode [3/4], Reward: 41.18293465, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 807.0022702217102 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01681748, Test Loss: 0.04938466
+Epoch [20/100], Training Loss: 0.01122422, Test Loss: 0.04851599
+Epoch [30/100], Training Loss: 0.00932325, Test Loss: 0.04889046
+Epoch [40/100], Training Loss: 0.00788978, Test Loss: 0.04902189
+Epoch [50/100], Training Loss: 0.00736503, Test Loss: 0.04956370
+Epoch [60/100], Training Loss: 0.00678376, Test Loss: 0.04989791
+Epoch [70/100], Training Loss: 0.00611341, Test Loss: 0.05088641
+Epoch [80/100], Training Loss: 0.00598603, Test Loss: 0.05166882
+Epoch [90/100], Training Loss: 0.00549953, Test Loss: 0.05201828
+Epoch [100/100], Training Loss: 0.00534691, Test Loss: 0.05211228
+**********************************************
+The reinforce process [76], collecting data ...
+Episode [0/4], Reward: 36.44817891, Step: [99/100]
+Episode [1/4], Reward: 39.77017900, Step: [99/100]
+Episode [2/4], Reward: 39.94812976, Step: [99/100]
+Episode [3/4], Reward: 34.00689265, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 808.3611688613892 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01653590, Test Loss: 0.06304945
+Epoch [20/100], Training Loss: 0.01063185, Test Loss: 0.06131299
+Epoch [30/100], Training Loss: 0.00889948, Test Loss: 0.06228353
+Epoch [40/100], Training Loss: 0.00695228, Test Loss: 0.06208862
+Epoch [50/100], Training Loss: 0.00610134, Test Loss: 0.06262514
+Epoch [60/100], Training Loss: 0.00551487, Test Loss: 0.06283682
+Epoch [70/100], Training Loss: 0.00502379, Test Loss: 0.06388769
+Epoch [80/100], Training Loss: 0.00493412, Test Loss: 0.06449839
+Epoch [90/100], Training Loss: 0.00457900, Test Loss: 0.06486238
+Epoch [100/100], Training Loss: 0.00438023, Test Loss: 0.06550193
+**********************************************
+The reinforce process [77], collecting data ...
+Episode [0/4], Reward: 38.21346421, Step: [99/100]
+Episode [1/4], Reward: 38.02059837, Step: [99/100]
+Episode [2/4], Reward: 39.91276969, Step: [99/100]
+Episode [3/4], Reward: 39.33518170, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 808.0047719478607 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01707534, Test Loss: 0.06347698
+Epoch [20/100], Training Loss: 0.01099722, Test Loss: 0.06184654
+Epoch [30/100], Training Loss: 0.00841258, Test Loss: 0.06195844
+Epoch [40/100], Training Loss: 0.00682942, Test Loss: 0.06170169
+Epoch [50/100], Training Loss: 0.00611975, Test Loss: 0.06266039
+Epoch [60/100], Training Loss: 0.00550659, Test Loss: 0.06241822
+Epoch [70/100], Training Loss: 0.00504727, Test Loss: 0.06313602
+Epoch [80/100], Training Loss: 0.00481937, Test Loss: 0.06335969
+Epoch [90/100], Training Loss: 0.00441000, Test Loss: 0.06397763
+Epoch [100/100], Training Loss: 0.00443333, Test Loss: 0.06451037
+**********************************************
+The reinforce process [78], collecting data ...
+Episode [0/4], Reward: 33.41875893, Step: [99/100]
+Episode [1/4], Reward: 39.10184813, Step: [99/100]
+Episode [2/4], Reward: 33.15160745, Step: [99/100]
+Episode [3/4], Reward: 35.98399113, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 804.7045683860779 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01656011, Test Loss: 0.06115177
+Epoch [20/100], Training Loss: 0.00992687, Test Loss: 0.05962270
+Epoch [30/100], Training Loss: 0.00804195, Test Loss: 0.05959100
+Epoch [40/100], Training Loss: 0.00672477, Test Loss: 0.05992899
+Epoch [50/100], Training Loss: 0.00596091, Test Loss: 0.06006637
+Epoch [60/100], Training Loss: 0.00567645, Test Loss: 0.06136598
+Epoch [70/100], Training Loss: 0.00520745, Test Loss: 0.06129205
+Epoch [80/100], Training Loss: 0.00497241, Test Loss: 0.06182826
+Epoch [90/100], Training Loss: 0.00468307, Test Loss: 0.06248338
+Epoch [100/100], Training Loss: 0.00445764, Test Loss: 0.06305459
+**********************************************
+The reinforce process [79], collecting data ...
+Episode [0/4], Reward: 33.69732670, Step: [99/100]
+Episode [1/4], Reward: 38.69008078, Step: [99/100]
+Episode [2/4], Reward: 40.83979254, Step: [99/100]
+Episode [3/4], Reward: 41.99393899, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 805.4356718063354 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01390082, Test Loss: 0.05507567
+Epoch [20/100], Training Loss: 0.00893081, Test Loss: 0.05407500
+Epoch [30/100], Training Loss: 0.00680704, Test Loss: 0.05348549
+Epoch [40/100], Training Loss: 0.00612491, Test Loss: 0.05398772
+Epoch [50/100], Training Loss: 0.00528720, Test Loss: 0.05431296
+Epoch [60/100], Training Loss: 0.00483418, Test Loss: 0.05516573
+Epoch [70/100], Training Loss: 0.00436250, Test Loss: 0.05531589
+Epoch [80/100], Training Loss: 0.00413282, Test Loss: 0.05587133
+Epoch [90/100], Training Loss: 0.00380189, Test Loss: 0.05662034
+Epoch [100/100], Training Loss: 0.00379347, Test Loss: 0.05732331
+**********************************************
+The reinforce process [80], collecting data ...
+Episode [0/4], Reward: 38.37328860, Step: [99/100]
+Episode [1/4], Reward: 41.91643856, Step: [99/100]
+Episode [2/4], Reward: 36.53328478, Step: [99/100]
+Episode [3/4], Reward: 39.62141658, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 804.1480929851532 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01632356, Test Loss: 0.05992979
+Epoch [20/100], Training Loss: 0.01070251, Test Loss: 0.05801592
+Epoch [30/100], Training Loss: 0.00826219, Test Loss: 0.05781383
+Epoch [40/100], Training Loss: 0.00726035, Test Loss: 0.05840573
+Epoch [50/100], Training Loss: 0.00609049, Test Loss: 0.05897970
+Epoch [60/100], Training Loss: 0.00581825, Test Loss: 0.05976294
+Epoch [70/100], Training Loss: 0.00513751, Test Loss: 0.06005064
+Epoch [80/100], Training Loss: 0.00478916, Test Loss: 0.06083960
+Epoch [90/100], Training Loss: 0.00475414, Test Loss: 0.06148520
+Epoch [100/100], Training Loss: 0.00443580, Test Loss: 0.06224356
+**********************************************
+The reinforce process [81], collecting data ...
+Episode [0/4], Reward: 39.94723628, Step: [99/100]
+Episode [1/4], Reward: 34.47069553, Step: [99/100]
+Episode [2/4], Reward: 33.07246292, Step: [99/100]
+Episode [3/4], Reward: 35.89102606, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 811.3064322471619 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01438796, Test Loss: 0.05533688
+Epoch [20/100], Training Loss: 0.00919733, Test Loss: 0.05443579
+Epoch [30/100], Training Loss: 0.00721158, Test Loss: 0.05495692
+Epoch [40/100], Training Loss: 0.00595887, Test Loss: 0.05518625
+Epoch [50/100], Training Loss: 0.00528075, Test Loss: 0.05584256
+Epoch [60/100], Training Loss: 0.00496517, Test Loss: 0.05649873
+Epoch [70/100], Training Loss: 0.00433576, Test Loss: 0.05711916
+Epoch [80/100], Training Loss: 0.00407869, Test Loss: 0.05730236
+Epoch [90/100], Training Loss: 0.00386709, Test Loss: 0.05795909
+Epoch [100/100], Training Loss: 0.00380215, Test Loss: 0.05838413
+**********************************************
+The reinforce process [82], collecting data ...
+Episode [0/4], Reward: 33.65890734, Step: [99/100]
+Episode [1/4], Reward: 41.21111772, Step: [99/100]
+Episode [2/4], Reward: 37.29380922, Step: [99/100]
+Episode [3/4], Reward: 34.48900854, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 801.2069938182831 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01427074, Test Loss: 0.05146314
+Epoch [20/100], Training Loss: 0.00924638, Test Loss: 0.05101132
+Epoch [30/100], Training Loss: 0.00714420, Test Loss: 0.05118099
+Epoch [40/100], Training Loss: 0.00620857, Test Loss: 0.05135826
+Epoch [50/100], Training Loss: 0.00549856, Test Loss: 0.05268894
+Epoch [60/100], Training Loss: 0.00491500, Test Loss: 0.05298399
+Epoch [70/100], Training Loss: 0.00432030, Test Loss: 0.05326463
+Epoch [80/100], Training Loss: 0.00413003, Test Loss: 0.05406808
+Epoch [90/100], Training Loss: 0.00386549, Test Loss: 0.05438762
+Epoch [100/100], Training Loss: 0.00391894, Test Loss: 0.05507922
+**********************************************
+The reinforce process [83], collecting data ...
+Episode [0/4], Reward: 37.28860313, Step: [99/100]
+Episode [1/4], Reward: 40.58481298, Step: [99/100]
+Episode [2/4], Reward: 35.78101102, Step: [99/100]
+Episode [3/4], Reward: 36.82373642, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 806.127099275589 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01748877, Test Loss: 0.05552856
+Epoch [20/100], Training Loss: 0.01076755, Test Loss: 0.05372954
+Epoch [30/100], Training Loss: 0.00812605, Test Loss: 0.05388188
+Epoch [40/100], Training Loss: 0.00688030, Test Loss: 0.05430157
+Epoch [50/100], Training Loss: 0.00609836, Test Loss: 0.05507989
+Epoch [60/100], Training Loss: 0.00555557, Test Loss: 0.05548059
+Epoch [70/100], Training Loss: 0.00514555, Test Loss: 0.05623281
+Epoch [80/100], Training Loss: 0.00477418, Test Loss: 0.05640184
+Epoch [90/100], Training Loss: 0.00438577, Test Loss: 0.05648238
+Epoch [100/100], Training Loss: 0.00404501, Test Loss: 0.05692230
+**********************************************
+The reinforce process [84], collecting data ...
+Episode [0/4], Reward: 33.64186392, Step: [99/100]
+Episode [1/4], Reward: 32.29443568, Step: [99/100]
+Episode [2/4], Reward: 41.31805833, Step: [99/100]
+Episode [3/4], Reward: 42.43816638, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 800.6743681430817 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02918494, Test Loss: 0.08108217
+Epoch [20/100], Training Loss: 0.01981785, Test Loss: 0.07920363
+Epoch [30/100], Training Loss: 0.01575052, Test Loss: 0.07942786
+Epoch [40/100], Training Loss: 0.01320208, Test Loss: 0.07831358
+Epoch [50/100], Training Loss: 0.01151046, Test Loss: 0.07863639
+Epoch [60/100], Training Loss: 0.01030688, Test Loss: 0.07992172
+Epoch [70/100], Training Loss: 0.00923369, Test Loss: 0.07984590
+Epoch [80/100], Training Loss: 0.00847956, Test Loss: 0.08065492
+Epoch [90/100], Training Loss: 0.00778798, Test Loss: 0.08131458
+Epoch [100/100], Training Loss: 0.00734505, Test Loss: 0.08231052
+**********************************************
+The reinforce process [85], collecting data ...
+Episode [0/4], Reward: 34.59698904, Step: [99/100]
+Episode [1/4], Reward: 39.91817634, Step: [99/100]
+Episode [2/4], Reward: 37.91499649, Step: [99/100]
+Episode [3/4], Reward: 38.54145931, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 805.3150475025177 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01835417, Test Loss: 0.06952790
+Epoch [20/100], Training Loss: 0.01123702, Test Loss: 0.06601957
+Epoch [30/100], Training Loss: 0.00859647, Test Loss: 0.06591582
+Epoch [40/100], Training Loss: 0.00727434, Test Loss: 0.06567184
+Epoch [50/100], Training Loss: 0.00629653, Test Loss: 0.06600077
+Epoch [60/100], Training Loss: 0.00560835, Test Loss: 0.06620032
+Epoch [70/100], Training Loss: 0.00513606, Test Loss: 0.06650022
+Epoch [80/100], Training Loss: 0.00494911, Test Loss: 0.06689620
+Epoch [90/100], Training Loss: 0.00434142, Test Loss: 0.06767541
+Epoch [100/100], Training Loss: 0.00433905, Test Loss: 0.06794054
+**********************************************
+The reinforce process [86], collecting data ...
+Episode [0/4], Reward: 33.98665570, Step: [99/100]
+Episode [1/4], Reward: 39.74226293, Step: [99/100]
+Episode [2/4], Reward: 36.01366059, Step: [99/100]
+Episode [3/4], Reward: 41.10603107, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 803.8571124076843 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01727737, Test Loss: 0.06146630
+Epoch [20/100], Training Loss: 0.01106881, Test Loss: 0.06099352
+Epoch [30/100], Training Loss: 0.00864488, Test Loss: 0.06081055
+Epoch [40/100], Training Loss: 0.00719953, Test Loss: 0.06135143
+Epoch [50/100], Training Loss: 0.00624455, Test Loss: 0.06192896
+Epoch [60/100], Training Loss: 0.00561604, Test Loss: 0.06237028
+Epoch [70/100], Training Loss: 0.00508543, Test Loss: 0.06272882
+Epoch [80/100], Training Loss: 0.00469079, Test Loss: 0.06341005
+Epoch [90/100], Training Loss: 0.00467323, Test Loss: 0.06396750
+Epoch [100/100], Training Loss: 0.00460267, Test Loss: 0.06457084
+**********************************************
+The reinforce process [87], collecting data ...
+Episode [0/4], Reward: 36.67722766, Step: [99/100]
+Episode [1/4], Reward: 35.97903943, Step: [99/100]
+Episode [2/4], Reward: 32.17670703, Step: [99/100]
+Episode [3/4], Reward: 41.17697237, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 858.7314584255219 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01739369, Test Loss: 0.06232627
+Epoch [20/100], Training Loss: 0.01169995, Test Loss: 0.06115872
+Epoch [30/100], Training Loss: 0.00916483, Test Loss: 0.06143160
+Epoch [40/100], Training Loss: 0.00800958, Test Loss: 0.06282217
+Epoch [50/100], Training Loss: 0.00648752, Test Loss: 0.06292443
+Epoch [60/100], Training Loss: 0.00608079, Test Loss: 0.06370380
+Epoch [70/100], Training Loss: 0.00565663, Test Loss: 0.06439283
+Epoch [80/100], Training Loss: 0.00518657, Test Loss: 0.06483466
+Epoch [90/100], Training Loss: 0.00475239, Test Loss: 0.06548111
+Epoch [100/100], Training Loss: 0.00440856, Test Loss: 0.06592900
+**********************************************
+The reinforce process [88], collecting data ...
+Episode [0/4], Reward: 40.71053530, Step: [99/100]
+Episode [1/4], Reward: 40.17871625, Step: [99/100]
+Episode [2/4], Reward: 37.59870073, Step: [99/100]
+Episode [3/4], Reward: 37.04643756, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 831.8459899425507 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01620258, Test Loss: 0.06069942
+Epoch [20/100], Training Loss: 0.01036740, Test Loss: 0.05992669
+Epoch [30/100], Training Loss: 0.00819557, Test Loss: 0.05991933
+Epoch [40/100], Training Loss: 0.00698610, Test Loss: 0.06042402
+Epoch [50/100], Training Loss: 0.00618097, Test Loss: 0.06102186
+Epoch [60/100], Training Loss: 0.00567535, Test Loss: 0.06143061
+Epoch [70/100], Training Loss: 0.00552364, Test Loss: 0.06216772
+Epoch [80/100], Training Loss: 0.00484487, Test Loss: 0.06255641
+Epoch [90/100], Training Loss: 0.00458292, Test Loss: 0.06309045
+Epoch [100/100], Training Loss: 0.00447985, Test Loss: 0.06349737
+**********************************************
+The reinforce process [89], collecting data ...
+Episode [0/4], Reward: 40.40465521, Step: [99/100]
+Episode [1/4], Reward: 38.25383851, Step: [99/100]
+Episode [2/4], Reward: 37.64656037, Step: [99/100]
+Episode [3/4], Reward: 35.35821605, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 807.3984136581421 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02164554, Test Loss: 0.07481673
+Epoch [20/100], Training Loss: 0.01322604, Test Loss: 0.07200709
+Epoch [30/100], Training Loss: 0.01077560, Test Loss: 0.07131594
+Epoch [40/100], Training Loss: 0.00852817, Test Loss: 0.07158645
+Epoch [50/100], Training Loss: 0.00765341, Test Loss: 0.07241575
+Epoch [60/100], Training Loss: 0.00677880, Test Loss: 0.07310388
+Epoch [70/100], Training Loss: 0.00600229, Test Loss: 0.07323932
+Epoch [80/100], Training Loss: 0.00542891, Test Loss: 0.07379850
+Epoch [90/100], Training Loss: 0.00522320, Test Loss: 0.07462657
+Epoch [100/100], Training Loss: 0.00482364, Test Loss: 0.07530065
+**********************************************
+The reinforce process [90], collecting data ...
+Episode [0/4], Reward: 33.22845804, Step: [99/100]
+Episode [1/4], Reward: 34.85614322, Step: [99/100]
+Episode [2/4], Reward: 33.60376478, Step: [99/100]
+Episode [3/4], Reward: 36.44985833, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 828.3344938755035 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02013653, Test Loss: 0.07186912
+Epoch [20/100], Training Loss: 0.01227277, Test Loss: 0.07028631
+Epoch [30/100], Training Loss: 0.00961156, Test Loss: 0.07111742
+Epoch [40/100], Training Loss: 0.00824407, Test Loss: 0.07153247
+Epoch [50/100], Training Loss: 0.00710419, Test Loss: 0.07261578
+Epoch [60/100], Training Loss: 0.00644804, Test Loss: 0.07274076
+Epoch [70/100], Training Loss: 0.00586178, Test Loss: 0.07316763
+Epoch [80/100], Training Loss: 0.00535469, Test Loss: 0.07399005
+Epoch [90/100], Training Loss: 0.00523864, Test Loss: 0.07481696
+Epoch [100/100], Training Loss: 0.00482629, Test Loss: 0.07491303
+**********************************************
+The reinforce process [91], collecting data ...
+Episode [0/4], Reward: 34.27717305, Step: [99/100]
+Episode [1/4], Reward: 35.89550034, Step: [99/100]
+Episode [2/4], Reward: 40.21248934, Step: [99/100]
+Episode [3/4], Reward: 39.43549321, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 803.8218560218811 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02595322, Test Loss: 0.08300230
+Epoch [20/100], Training Loss: 0.01711885, Test Loss: 0.08059612
+Epoch [30/100], Training Loss: 0.01340964, Test Loss: 0.08046238
+Epoch [40/100], Training Loss: 0.01135692, Test Loss: 0.08080413
+Epoch [50/100], Training Loss: 0.00992734, Test Loss: 0.08136397
+Epoch [60/100], Training Loss: 0.00868799, Test Loss: 0.08159947
+Epoch [70/100], Training Loss: 0.00791370, Test Loss: 0.08206836
+Epoch [80/100], Training Loss: 0.00726373, Test Loss: 0.08286136
+Epoch [90/100], Training Loss: 0.00660057, Test Loss: 0.08404095
+Epoch [100/100], Training Loss: 0.00634763, Test Loss: 0.08476310
+**********************************************
+The reinforce process [92], collecting data ...
+Episode [0/4], Reward: 42.45662883, Step: [99/100]
+Episode [1/4], Reward: 39.56147124, Step: [99/100]
+Episode [2/4], Reward: 38.98024703, Step: [99/100]
+Episode [3/4], Reward: 32.85353964, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 800.4291851520538 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02119888, Test Loss: 0.07518451
+Epoch [20/100], Training Loss: 0.01437755, Test Loss: 0.07413203
+Epoch [30/100], Training Loss: 0.01107623, Test Loss: 0.07312832
+Epoch [40/100], Training Loss: 0.00969540, Test Loss: 0.07355821
+Epoch [50/100], Training Loss: 0.00856744, Test Loss: 0.07468379
+Epoch [60/100], Training Loss: 0.00767257, Test Loss: 0.07497202
+Epoch [70/100], Training Loss: 0.00687293, Test Loss: 0.07542109
+Epoch [80/100], Training Loss: 0.00641476, Test Loss: 0.07613736
+Epoch [90/100], Training Loss: 0.00614057, Test Loss: 0.07645421
+Epoch [100/100], Training Loss: 0.00572616, Test Loss: 0.07714307
+**********************************************
+The reinforce process [93], collecting data ...
+Episode [0/4], Reward: 36.68308314, Step: [99/100]
+Episode [1/4], Reward: 37.35311113, Step: [99/100]
+Episode [2/4], Reward: 34.13573150, Step: [99/100]
+Episode [3/4], Reward: 39.56861696, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 793.2199065685272 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02032150, Test Loss: 0.07142726
+Epoch [20/100], Training Loss: 0.01319489, Test Loss: 0.07046929
+Epoch [30/100], Training Loss: 0.01072738, Test Loss: 0.07039190
+Epoch [40/100], Training Loss: 0.00894849, Test Loss: 0.07084791
+Epoch [50/100], Training Loss: 0.00783744, Test Loss: 0.07141319
+Epoch [60/100], Training Loss: 0.00687349, Test Loss: 0.07149929
+Epoch [70/100], Training Loss: 0.00660711, Test Loss: 0.07243997
+Epoch [80/100], Training Loss: 0.00609334, Test Loss: 0.07297768
+Epoch [90/100], Training Loss: 0.00564173, Test Loss: 0.07332472
+Epoch [100/100], Training Loss: 0.00544162, Test Loss: 0.07427096
+**********************************************
+The reinforce process [94], collecting data ...
+Episode [0/4], Reward: 34.75080879, Step: [99/100]
+Episode [1/4], Reward: 38.33172153, Step: [99/100]
+Episode [2/4], Reward: 37.84535753, Step: [99/100]
+Episode [3/4], Reward: 31.54919199, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 753.6346752643585 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01966312, Test Loss: 0.07892900
+Epoch [20/100], Training Loss: 0.01171816, Test Loss: 0.07647055
+Epoch [30/100], Training Loss: 0.00916701, Test Loss: 0.07680142
+Epoch [40/100], Training Loss: 0.00769635, Test Loss: 0.07695068
+Epoch [50/100], Training Loss: 0.00684360, Test Loss: 0.07803753
+Epoch [60/100], Training Loss: 0.00621414, Test Loss: 0.07831365
+Epoch [70/100], Training Loss: 0.00565226, Test Loss: 0.07908202
+Epoch [80/100], Training Loss: 0.00507959, Test Loss: 0.07938231
+Epoch [90/100], Training Loss: 0.00494475, Test Loss: 0.08013156
+Epoch [100/100], Training Loss: 0.00459774, Test Loss: 0.08100685
+**********************************************
+The reinforce process [95], collecting data ...
+Episode [0/4], Reward: 38.53144169, Step: [99/100]
+Episode [1/4], Reward: 39.55612814, Step: [99/100]
+Episode [2/4], Reward: 37.92615117, Step: [99/100]
+Episode [3/4], Reward: 37.20935388, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 751.3882086277008 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02041942, Test Loss: 0.07073602
+Epoch [20/100], Training Loss: 0.01269731, Test Loss: 0.06899801
+Epoch [30/100], Training Loss: 0.01011829, Test Loss: 0.06951914
+Epoch [40/100], Training Loss: 0.00864613, Test Loss: 0.07027380
+Epoch [50/100], Training Loss: 0.00753318, Test Loss: 0.07029699
+Epoch [60/100], Training Loss: 0.00666222, Test Loss: 0.07084728
+Epoch [70/100], Training Loss: 0.00636468, Test Loss: 0.07166736
+Epoch [80/100], Training Loss: 0.00599311, Test Loss: 0.07191832
+Epoch [90/100], Training Loss: 0.00555984, Test Loss: 0.07248215
+Epoch [100/100], Training Loss: 0.00516507, Test Loss: 0.07323362
+**********************************************
+The reinforce process [96], collecting data ...
+Episode [0/4], Reward: 37.58476300, Step: [99/100]
+Episode [1/4], Reward: 35.35516440, Step: [99/100]
+Episode [2/4], Reward: 40.56359465, Step: [99/100]
+Episode [3/4], Reward: 35.16465144, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 745.8335790634155 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.01904414, Test Loss: 0.06766279
+Epoch [20/100], Training Loss: 0.01208286, Test Loss: 0.06685190
+Epoch [30/100], Training Loss: 0.00976030, Test Loss: 0.06716658
+Epoch [40/100], Training Loss: 0.00825918, Test Loss: 0.06774213
+Epoch [50/100], Training Loss: 0.00761364, Test Loss: 0.06834226
+Epoch [60/100], Training Loss: 0.00684055, Test Loss: 0.06941144
+Epoch [70/100], Training Loss: 0.00615005, Test Loss: 0.06974281
+Epoch [80/100], Training Loss: 0.00614362, Test Loss: 0.07056673
+Epoch [90/100], Training Loss: 0.00572540, Test Loss: 0.07111012
+Epoch [100/100], Training Loss: 0.00529033, Test Loss: 0.07154266
+**********************************************
+The reinforce process [97], collecting data ...
+Episode [0/4], Reward: 37.28882606, Step: [99/100]
+Episode [1/4], Reward: 33.14128392, Step: [99/100]
+Episode [2/4], Reward: 33.72352000, Step: [99/100]
+Episode [3/4], Reward: 35.81732113, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 748.7976443767548 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02024398, Test Loss: 0.07768878
+Epoch [20/100], Training Loss: 0.01371347, Test Loss: 0.07777916
+Epoch [30/100], Training Loss: 0.01043839, Test Loss: 0.07800833
+Epoch [40/100], Training Loss: 0.00892255, Test Loss: 0.07917198
+Epoch [50/100], Training Loss: 0.00794532, Test Loss: 0.08019710
+Epoch [60/100], Training Loss: 0.00698615, Test Loss: 0.08098925
+Epoch [70/100], Training Loss: 0.00614287, Test Loss: 0.08078251
+Epoch [80/100], Training Loss: 0.00582215, Test Loss: 0.08254413
+Epoch [90/100], Training Loss: 0.00566836, Test Loss: 0.08320511
+Epoch [100/100], Training Loss: 0.00516110, Test Loss: 0.08356030
+**********************************************
+The reinforce process [98], collecting data ...
+Episode [0/4], Reward: 42.76769381, Step: [99/100]
+Episode [1/4], Reward: 34.11811140, Step: [99/100]
+Episode [2/4], Reward: 34.60394636, Step: [99/100]
+Episode [3/4], Reward: 32.09682607, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 746.624454498291 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02187197, Test Loss: 0.07878390
+Epoch [20/100], Training Loss: 0.01331845, Test Loss: 0.07569608
+Epoch [30/100], Training Loss: 0.00996507, Test Loss: 0.07520255
+Epoch [40/100], Training Loss: 0.00805985, Test Loss: 0.07575604
+Epoch [50/100], Training Loss: 0.00720290, Test Loss: 0.07602506
+Epoch [60/100], Training Loss: 0.00621612, Test Loss: 0.07613007
+Epoch [70/100], Training Loss: 0.00563015, Test Loss: 0.07693282
+Epoch [80/100], Training Loss: 0.00517779, Test Loss: 0.07780219
+Epoch [90/100], Training Loss: 0.00480796, Test Loss: 0.07793557
+Epoch [100/100], Training Loss: 0.00488047, Test Loss: 0.07853988
+**********************************************
+The reinforce process [99], collecting data ...
+Episode [0/4], Reward: 36.43663337, Step: [99/100]
+Episode [1/4], Reward: 38.46614498, Step: [99/100]
+Episode [2/4], Reward: 42.34955763, Step: [99/100]
+Episode [3/4], Reward: 38.68197321, Step: [99/100]
+Totally collect 400 data based on MPC
+Saving all datas to storage/data_exp_7.pkl
+Sample 7600 training data from all previous dataset, total training sample: 8000
+Consume 755.6369483470917 s in this iteration
+Total training step per epoch [16]
+Epoch [10/100], Training Loss: 0.02383588, Test Loss: 0.08333803
+Epoch [20/100], Training Loss: 0.01557371, Test Loss: 0.08130615
+Epoch [30/100], Training Loss: 0.01274694, Test Loss: 0.08216048
+Epoch [40/100], Training Loss: 0.01062280, Test Loss: 0.08282947
+Epoch [50/100], Training Loss: 0.00938413, Test Loss: 0.08347274
+Epoch [60/100], Training Loss: 0.00815070, Test Loss: 0.08381121
+Epoch [70/100], Training Loss: 0.00742647, Test Loss: 0.08474006
+Epoch [80/100], Training Loss: 0.00641340, Test Loss: 0.08544981
+Epoch [90/100], Training Loss: 0.00635853, Test Loss: 0.08605660
+Epoch [100/100], Training Loss: 0.00616028, Test Loss: 0.08688222
+
+Process finished with exit code 0

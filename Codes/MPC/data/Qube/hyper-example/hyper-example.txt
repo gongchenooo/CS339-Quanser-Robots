@@ -1,0 +1,6 @@
+hyper-example
+
+learning-rate: 0.001
+epochs: 100
+max-itrs: 30
+train-itrs: 50
